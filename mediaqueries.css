@@ -68,10 +68,12 @@
     }
     .about-containers, .contact-info-upper-container, .btn-container{
         flex-wrap: wrap;
+        gap: 2rem;
     }
 
     .contact-info-container {
         margin: 0;
+        gap: 1rem;
     }
 
     .contact-info-container p,
