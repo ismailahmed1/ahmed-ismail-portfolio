@@ -57,26 +57,22 @@ a, .btn {
 .theme-toggle {
     background: none;
     border: none;
-    padding: 0.5rem;
     cursor: pointer;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1000;
+    padding: 0.5rem;
+    margin-left: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
 }
 
-.theme-toggle:hover {
-    transform: scale(1.1);
-}
-
-.theme-toggle img {
+.theme-toggle .icon {
     width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .icon {
+    transform: scale(1.1);
 }
 
 /* DESKTOP NAV */
@@ -437,7 +433,6 @@ article div {
 
 #projects {
     position: relative;
-    margin: 0 10rem;
 }
 
 .color-container {
@@ -450,12 +445,11 @@ article div {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
-    object-fit: cover;
 }
 
 .project-title {
     margin: 1rem;
-    color: var(--project-title-color);
+    color: var(--text-color);
 }
 
 .project-btn {
@@ -509,13 +503,14 @@ article div {
     cursor: default;
 }
 
-/* FOOTER  */
+/* FOOTER SECTION */
 
 footer {
     height: 26vh;
-    margin: 0 1rem; 
+    margin: 0 1rem;
 }
 
 footer p {
     text-align: center;
+    padding-top: 1rem;
 }

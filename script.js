@@ -5,19 +5,11 @@ function toggleMenu() {
     icon.classList.toggle("icon");
 }
 
-// Dark mode functionality
-function initTheme() {
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const storedTheme = localStorage.getItem('theme');
-    
-    if (storedTheme) {
-        document.documentElement.setAttribute('data-theme', storedTheme);
-        updateThemeIcon(storedTheme);
-    } else if (prefersDarkScheme.matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        updateThemeIcon('dark');
-    }
-}
+// Theme toggle functionality
+const themeToggle = document.getElementById('theme-toggle');
+const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+const themeIcon = document.getElementById('theme-icon');
+const themeIconMobile = document.getElementById('theme-icon-mobile');
 
 function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
@@ -25,17 +17,17 @@ function toggleTheme() {
     
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
+    
+    // Update both icons
+    themeIcon.src = newTheme === 'dark' ? './assets/sun.svg' : './assets/moon.svg';
+    themeIconMobile.src = newTheme === 'dark' ? './assets/sun.svg' : './assets/moon.svg';
 }
 
-function updateThemeIcon(theme) {
-    const icon = document.getElementById('theme-icon');
-    icon.src = theme === 'dark' ? 'assets/sun.svg' : 'assets/moon.svg';
-    icon.alt = theme === 'dark' ? 'Light mode' : 'Dark mode';
-}
+// Initialize theme from localStorage
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
+themeIcon.src = savedTheme === 'dark' ? './assets/sun.svg' : './assets/moon.svg';
+themeIconMobile.src = savedTheme === 'dark' ? './assets/sun.svg' : './assets/moon.svg';
 
-// Initialize theme
-document.addEventListener('DOMContentLoaded', initTheme);
-
-// Add event listener to theme toggle button
-document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+themeToggle.addEventListener('click', toggleTheme);
+themeToggleMobile.addEventListener('click', toggleTheme);
