@@ -82,14 +82,14 @@ nav, .nav-links {
 }
 
 nav {
-    background-color: var(--container-bg);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    box-shadow: none;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
 }
 
-.nav-links{
+.nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
