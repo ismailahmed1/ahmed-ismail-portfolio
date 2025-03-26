@@ -10,11 +10,11 @@
 <body>
     <nav id ="desktop-nav">
         <div class ="logo">Ahmed Ismail</div>
-        <div>
+        <div style="display: flex; align-items: center;">
             <ul class = "nav-links">
                 <li><a href = "#about">About</a></li>
-                <li><a href = "#experience">Experience</a></li>
-                <li><a href = "#projects ">Projects</a></li>
+                <li><a href = "#experience">Technical Skills</a></li>
+                <li><a href = "#projects">Projects</a></li>
                 <li><a href = "#contact">Contact</a></li>
             </ul>
         </div>
@@ -30,12 +30,17 @@
             </div>
             <div class = "menu-links">
                 <li><a href = "#about" onclick="toggleMenu()">About</a></li>
-                <li><a href = "#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href = "#experience" onclick="toggleMenu()">Technical Skills</a></li>
                 <li><a href = "#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href = "#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+
+    <button id="theme-toggle" class="theme-toggle">
+        <img src="./assets/moon.svg" alt="Dark Mode" class="icon" id="theme-icon">
+    </button>
+
     <section id = "profile">
         <div class = "section__pic-container">
             <img src="./assets/profile-pic.jpg" alt="Ahmed Ismail's Profile Picture" >
@@ -46,7 +51,7 @@
         <p class = "section__text__p2">Software Development Intern at Nokia</p>
         <div class = "btn-container">
             <button class = "btn btn-color-2" onclick="window.open('./assets/Ahmed_Ismail_Resume.pdf')"
-            >Download CV</button>
+            >Resume / CV</button>
             <button class = "btn btn-color-1" onclick="location.href='./#contact'"
             >Contact Info</button>
         </div>
@@ -82,14 +87,14 @@
                         alt="Experience Icon"
                         class = "icon" />
                     <h3>Work Experience</h3>
-                    <p> Nokia - Software Development Intern<br>Carleton University - Python Teaching Assistant</p>
+                    <p>Nokia - Software Development Intern<br>Carleton University - Python Teaching Assistant<br><br>Please refer to my resume for more details :)<br> ("Resume / CV" button on the first page)</p>
                 </div>
                 <div class = "details-container">
                     <img src="./assets/education.png" 
                         alt="Education Icon"
                         class = "icon" />
                     <h3>Education</h3>
-                    <p> Carleton University <br> Bachelor of Engineering (B.Eng.), Computer Systems Engineering</p>
+                    <p> Carleton University <br> Bachelor of Engineering (B.Eng.)<br> Computer Systems Engineering - 3rd Year <br> GPA: 3.7/4.0 </p>
                 </div>
             </div>
             <div class ="text-container">
@@ -113,7 +118,7 @@
     </section>
     <section id = "experience">
         <p class ="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Technical Skills</h1>
         <div class ="experience-details-container">
             <div class = "about-containers">
                 <div class = "details-container">
@@ -418,7 +423,7 @@
             <div class ="nav-links-container">
                 <ul class = "nav-links">
                     <li><a href = "#about">About</a></li>
-                    <li><a href = "#experience">Experience</a></li>
+                    <li><a href = "#experience">Technical Skills</a></li>
                     <li><a href = "#projects">Projects</a></li>
                     <li><a href = "#contact">Contact</a></li>
                 </ul>
