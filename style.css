@@ -422,6 +422,11 @@ article .icon {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    filter: none;
+}
+
+[data-theme="dark"] article .icon {
+    filter: invert(1);
 }
 
 article div {

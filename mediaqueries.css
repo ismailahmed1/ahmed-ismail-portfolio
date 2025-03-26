@@ -3,48 +3,45 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers{
+    .about-containers {
         flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+        height: fit-content;
     }
 }
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
-        display:none;
+        display: none;
     }
     #hamburger-nav {
-        display:flex;
+        display: flex;
     }
-
     #experience,
     .experience-details-container {
         margin-top: 2rem;
     }
-
     #profile,
     .section-container {
-        display:block;
+        display: block;
     }
-
     .arrow {
         display: none;
     }
-
     section,
-    .section-container{
+    .section-container {
         height: fit-content;
     }
-
     section {
-        margin: 0 5%
+        margin: 0 5%;
     }
-
-    .section__pic-container{
+    .section__pic-container {
         width: 275px;
-        height:275px;
+        height: 275px;
         margin: 0 auto 2rem;
     }
-
     .about-containers {
         margin-top: 0;
     }
@@ -56,7 +53,7 @@
         height: 40vh;
     }
     #profile {
-        height:83vh;
+        height: 83vh;
         margin-bottom: 0;
     }
     article {
@@ -66,111 +63,104 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers, .contact-info-upper-container, .btn-container{
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
         flex-wrap: wrap;
-        gap: 2rem;
     }
-
     .contact-info-container {
         margin: 0;
-        gap: 1rem;
     }
-
     .contact-info-container p,
     .nav-links li a {
         font-size: 1rem;
     }
-    
     .experience-sub-title {
         font-size: 1.25rem;
     }
-
     .logo {
         font-size: 1.5rem;
     }
-
     .nav-links {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
-    
     .section__pic-container {
-        width: auto; 
+        width: auto;
         height: 46vw;
         justify-content: center;
     }
-
-    .section__text__p2{
+    .section__text__p2 {
         font-size: 1.25rem;
     }
-
     .title {
         font-size: 2rem;
     }
-
-    .text-container{
+    .text-container {
         text-align: justify;
     }
-
-    #projects {
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
+    
+    /* Project section specific styles */
+    #projects .experience-details-container {
+        margin-top: 2rem;
     }
-
+    
     #projects .about-containers {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 2rem;
     }
-
+    
     #projects .details-container.color-container {
-        width: 100%;
-        margin: 0;
-        padding: 1rem;
-        border-radius: 1.5rem;
-        box-sizing: border-box;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
     }
-
+    
+    #projects .article-container {
+        display: block;
+    }
+    
     #projects .project-img {
         width: 100%;
         height: auto;
-        border-radius: 1rem;
-        margin-bottom: 0.75rem;
+        border-radius: 1.5rem;
+    }
+    
+    #projects .project-title {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    #projects .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
     }
 }
 
-@media screen and (max-width: 380px) {
-    #projects {
-        padding: 0.5rem;
-    }
-
-    #projects .about-containers {
-        gap: 1rem;
-    }
-
+@media screen and (max-width: 400px) {
     #projects .details-container.color-container {
-        width: 100%;
-        padding: 0.75rem;
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    #projects .project-img {
         border-radius: 1rem;
     }
-
-    #projects .project-img {
-        border-radius: 0.75rem;
-        margin-bottom: 0.5rem;
-    }
-
+    
     #projects .project-title {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
     }
-
+    
     #projects .btn-container {
         gap: 0.5rem;
+    }
+    
+    .btn.project-btn {
+        padding: 0.75rem;
+        width: 7rem;
     }
 }
