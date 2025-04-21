@@ -3,8 +3,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --bg-color: #f8f9fa;
-    --text-color: #000;
+    --bg-color: #181818;
+    --text-color: #ffffff;
+    --primary-color: #00ff88;
+    --secondary-color: #00ff88;
+    --accent-color: #00ff88;
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --nav-text-color: #ffffff;
+    --nav-hover-color: rgba(255, 255, 255, 0.1);
+    --card-bg-color: rgba(0, 0, 0, 0.3);
+    --card-border-color: rgba(255, 255, 255, 0.1);
+    --input-bg-color: rgba(255, 255, 255, 0.1);
+    --input-text-color: #ffffff;
+    --input-border-color: rgba(255, 255, 255, 0.2);
+    --button-bg-color: #00ff88;
+    --button-text-color: #000000;
+    --button-hover-bg-color: #00cc6a;
+    --social-icon-color: #ffffff;
+    --social-icon-hover-color: #00ff88;
+    --section-bg-color: rgba(0, 0, 0, 0.2);
+    --scrollbar-track-color: #181818;
+    --scrollbar-thumb-color: #00ff88;
+    --scrollbar-thumb-hover-color: #00cc6a;
+    --text-color-light: rgb(85, 85, 85);
+    --container-bg: #fff;
+    --border-color: rgb(163, 163, 163);
+    --link-color: black;
+    --link-hover-color: grey;
+    --project-title-color: black;
+    --icon-color: #000;
+}
+
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #00ff88;
+    --secondary-color: #00ff88;
+    --accent-color: #00ff88;
+    --nav-bg-color: rgba(255, 255, 255, 0.3);
+    --nav-text-color: #333333;
+    --nav-hover-color: rgba(0, 0, 0, 0.1);
+    --card-bg-color: rgba(255, 255, 255, 0.3);
+    --card-border-color: rgba(0, 0, 0, 0.1);
+    --input-bg-color: rgba(0, 0, 0, 0.1);
+    --input-text-color: #333333;
+    --input-border-color: rgba(0, 0, 0, 0.2);
+    --button-bg-color: #00ff88;
+    --button-text-color: #000000;
+    --button-hover-bg-color: #00cc6a;
+    --social-icon-color: #333333;
+    --social-icon-hover-color: #00ff88;
+    --section-bg-color: rgba(255, 255, 255, 0.2);
+    --scrollbar-track-color: #ffffff;
+    --scrollbar-thumb-color: #00ff88;
+    --scrollbar-thumb-hover-color: #00cc6a;
     --text-color-light: rgb(85, 85, 85);
     --container-bg: #fff;
     --border-color: rgb(163, 163, 163);
