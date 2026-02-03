@@ -2,53 +2,40 @@ function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
-    icon.classList.toggle("icon");
+    icon.classList.toggle("open");
 }
 
-// Theme handling
+// Update theme icons based on current theme
+function updateThemeIcons(theme) {
+    const themeIcon = document.getElementById('theme-icon');
+    const themeIconMobile = document.getElementById('theme-icon-mobile');
+    const iconSrc = theme === 'dark' ? './assets/sun.svg' : './assets/moon.svg';
+
+    if (themeIcon) themeIcon.src = iconSrc;
+    if (themeIconMobile) themeIconMobile.src = iconSrc;
+}
+
+// Toggle theme between light and dark
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    updateThemeIcons(newTheme);
+}
+
+// Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
     // Set dark mode as default
     document.documentElement.setAttribute('data-theme', 'dark');
-    
-    // Update theme toggle button icons
-    const themeIcon = document.getElementById('theme-icon');
-    const themeIconMobile = document.getElementById('theme-icon-mobile');
-    if (themeIcon) themeIcon.src = './assets/sun.svg';
-    if (themeIconMobile) themeIconMobile.src = './assets/sun.svg';
-});
+    updateThemeIcons('dark');
 
-// Theme toggle functionality
-document.getElementById('theme-toggle')?.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    
-    // Update theme toggle button icons
-    const themeIcon = document.getElementById('theme-icon');
-    const themeIconMobile = document.getElementById('theme-icon-mobile');
-    if (newTheme === 'dark') {
-        if (themeIcon) themeIcon.src = './assets/sun.svg';
-        if (themeIconMobile) themeIconMobile.src = './assets/sun.svg';
-    } else {
-        if (themeIcon) themeIcon.src = './assets/moon.svg';
-        if (themeIconMobile) themeIconMobile.src = './assets/moon.svg';
+    // Set dynamic copyright year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
     }
 });
 
-// Mobile theme toggle functionality
-document.getElementById('theme-toggle-mobile')?.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    
-    // Update theme toggle button icons
-    const themeIcon = document.getElementById('theme-icon');
-    const themeIconMobile = document.getElementById('theme-icon-mobile');
-    if (newTheme === 'dark') {
-        if (themeIcon) themeIcon.src = './assets/sun.svg';
-        if (themeIconMobile) themeIconMobile.src = './assets/sun.svg';
-    } else {
-        if (themeIcon) themeIcon.src = './assets/moon.svg';
-        if (themeIconMobile) themeIconMobile.src = './assets/moon.svg';
-    }
-});
+// Theme toggle event listeners
+document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
+document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggleTheme);
