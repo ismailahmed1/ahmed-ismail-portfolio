@@ -3,311 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Ismail's Portfolio</title>
+    <meta name="description" content="Ahmed Ismail - Machine Learning Intern at Trend Micro. Computer Systems Engineering student at Carleton University. View my projects and experience.">
+    <title>Ahmed Ismail | Machine Learning Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id ="desktop-nav">
-        <div class ="logo">Ahmed Ismail</div>
+    <nav id="desktop-nav">
+        <div class="logo">Ahmed Ismail</div>
         <div style="display: flex; align-items: center;">
-            <ul class = "nav-links">
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#experience">Technical Skills</a></li>
-                <li><a href = "#projects">Projects</a></li>
-                <li><a href = "#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Technical Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-toggle">
-                <img src="./assets/moon.svg" alt="Dark Mode" class="icon" id="theme-icon">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <img src="./assets/moon.svg" alt="Toggle theme" class="icon" id="theme-icon">
             </button>
         </div>
     </nav>
 
-    <nav id = "hamburger-nav">
-        <div class ="logo">Ahmed Ismail</div>
-        <div class = "hamburger-menu">
-            <div class = "hamburger-icon" onclick = "toggleMenu()">
+    <nav id="hamburger-nav">
+        <div class="logo">Ahmed Ismail</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class = "menu-links">
-                <li><a href = "#about" onclick="toggleMenu()">About</a></li>
-                <li><a href = "#experience" onclick="toggleMenu()">Technical Skills</a></li>
-                <li><a href = "#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href = "#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Technical Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
         </div>
-        <button id="theme-toggle-mobile" class="theme-toggle">
-            <img src="./assets/moon.svg" alt="Dark Mode" class="icon" id="theme-icon-mobile">
+        <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+            <img src="./assets/moon.svg" alt="Toggle theme" class="icon" id="theme-icon-mobile">
         </button>
     </nav>
 
-    <section id = "profile">
-        <div class = "section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Ahmed Ismail's Profile Picture" >
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="Ahmed Ismail's Profile Picture">
         </div>
-        <div class = "section__text">
-        <p class = "section__text__p1">Welcome to my Portfolio!</p>
-        <h1 class = "title">Ahmed Ismail</h1>
-        <p class = "section__text__p2">Software Development Intern at Nokia</p>
-        <div class = "btn-container">
-            <button class = "btn btn-color-2" onclick="window.open('./assets/Ahmed_Ismail_Resume.pdf')"
-            >Resume / CV</button>
-            <button class = "btn btn-color-1" onclick="location.href='./#contact'"
-            >Contact Info</button>
-        </div>
-        <div id = "socials-container">
-            <img 
-            src = "./assets/linkedin.png" 
-            alt="Linkedin Profile:" class = "icon" 
-            onclick="location.href='https://www.linkedin.com/in/ismailahmed1/'"
-            />
-            <img 
-            src = "./assets/github.png" 
-            alt="Github Profile:" class = "icon" 
-            onclick="location.href='https://github.com/ismailahmed1'"
-            />
-        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Welcome to my Portfolio!</p>
+            <h1 class="title">Ahmed Ismail</h1>
+            <p class="section__text__p2">Machine Learning Intern at Trend Micro</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Ahmed_Ismail_Resume.pdf')">Resume / CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ismailahmed1/'">
+                <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/ismailahmed1'">
+            </div>
         </div>
     </section>
     <section id="about">
-        <p class ="section__text__p1">so, who am I?</p>
-        <h1 class = "title">About Me</h1>
-        <div class = "section-container">
-            <div class = "section__pic-container">
-                <img
-                src = "./assets/about-pic.png"
-                alt = "Profile Picture"
-                class = "about-pic"
-                />
+        <p class="section__text__p1">so, who am I?</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
             </div>
-            <div class ="about-details-container">
+            <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" 
-                        alt="Experience Icon"
-                        class = "icon" />
-                    <h3>Work Experience</h3>
-                    <p>Nokia - Software Development Intern<br>Carleton University - Python Teaching Assistant<br><br>Please refer to my resume for more details :)<br> ("Resume / CV" button on the first page)</p>
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Work Experience</h3>
+                        <p>Trend Micro - Machine Learning Intern<br>Ross Video - Software Engineer Intern<br>Nokia - Software Engineer Intern<br><br>Please refer to my resume for more details :)</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Carleton University<br>Bachelor of Engineering (B.Eng.)<br>Computer Systems Engineering - 4th Year<br>GPA: 3.7/4.0</p>
+                    </div>
                 </div>
-                <div class = "details-container">
-                    <img src="./assets/education.png" 
-                        alt="Education Icon"
-                        class = "icon" />
-                    <h3>Education</h3>
-                    <p> Carleton University <br> Bachelor of Engineering (B.Eng.)<br> Computer Systems Engineering - 3rd Year <br> GPA: 3.7/4.0 </p>
+                <div class="text-container">
+                    <p>Hey! I'm Ahmed — a fourth-year Computer Systems Engineering student at Carleton University, where I juggle everything from ML models to cloud infrastructure, all while maintaining a 3.7 GPA and earning a spot on the Dean's List.
+                        <br><br>
+                        Right now, I'm driving production ML model training and deployment at Trend Micro, working with PyTorch, TensorFlow, and building AI safety services with RAG and vector search. Previously, I co-led the development of an enterprise-grade Java/Selenium validation framework at Ross Video and engineered Python validation interfaces at Nokia.
+                        <br><br>
+                        I've also worked as a Teaching Assistant, built hackathon projects like MediClarify and EcoLens, and crafted full-stack apps just for fun. Whether it's machine learning, backend logic, or writing clean code that actually runs, I'm all in.
+                        <br><br>
+                        Off-duty, you'll find me lifting at the gym, battling through video games, catching up on the latest Marvel drop, or rewatching the Spider-Man movies for the 27th time. I also make time to visit family back in Egypt whenever I can.
+                        <br><br>
+                        Looking for a curious, committed, and slightly caffeinated engineer to join your team? Let's connect!
+                    </p>
                 </div>
-            </div>
-            <div class ="text-container">
-                <p>👋 Hey! I’m Ahmed — a third-year Computer Systems Engineering student at Carleton University, where I juggle everything from C pointers to cloud APIs, all while maintaining a 3.7 GPA and earning a spot on the Dean’s List 🎓.
-                    <br></br>
-                    Right now, I’m diving into automation tools and RESTful APIs as a software dev intern at Nokia, where I’ve built Python libraries with Selenium, reverse-engineered legacy scripts, and helped speed up network equipment testing for 80+ devs. TL;DR: I make things faster, smarter, and more stable.
-                    <br></br>
-                    I’ve also worked as a Teaching Assistant, built an AI-powered football journalist (yes, you can interview Mourinho), and crafted full-stack apps just for fun. Whether it’s backend logic, debugging chaos, or writing clean code that actually runs, I’m all in.
-                    <br></br>
-                    Off-duty, you’ll find me lifting at the gym, battling through video games, catching up on the latest Marvel drop, or rewatching the Spider-Man movies for the 27th time. I also make time to visit family back in Egypt whenever I can.
-                    <br></br>
-                    Looking for a curious, committed, and slightly caffeinated engineer to join your team? Let’s connect!
-                </p>
-            </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow Icon"
-        class = "icon arrow" 
-        onclick="location.href='./#experience'"
-        />
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
-    <section id = "experience">
-        <p class ="section__text__p1">what do I know?</p>
+    <section id="experience">
+        <p class="section__text__p1">what do I know?</p>
         <h1 class="title">Technical Skills</h1>
-        <div class ="experience-details-container">
-            <div class = "about-containers">
-                <div class = "details-container">
-                    <h2 class ="experience-sub-title">Languages</h2>
-                    <div class = "article-container">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Python</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Python</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Java</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Java</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>C/C++</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>C/C++</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>HTML5</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Rust</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>C#</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>JavaScript</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Bash</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>TypeScript</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Assembly</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Go</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>SQL</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>SQL</h3></div>
                         </article>
                     </div>
                 </div>
-                <div class = "details-container">
-                    <h2 class ="experience-sub-title">Developer Tools</h2>
-                    <div class = "article-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Libraries & Frameworks</h2>
+                    <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>VS Code</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>React.js</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Git</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Node.js</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Mercurial</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Express.js</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>VirtualBox</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Flask</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>MATLAB</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Spring Boot</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Eclipse</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>PyTorch</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>JIRA</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>TensorFlow</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Confluence</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Postman</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>AWS</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Tailwind</h3></div>
                         </article>
                     </div>
                 </div>
-                <div class = "details-container">
-                    <h2 class ="experience-sub-title">Technologies/Frameworks</h2>
-                    <div class = "article-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Developer Tools</h2>
+                    <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Linux</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Git</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Windows</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Docker</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>macOS</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>AWS</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Flask</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Azure</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>React.js</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>JIRA</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Express.js</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Postman</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>Node.js</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Databricks</h3></div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="Experience Icon" class = "icon"/>
-                            <div>
-                                <h3>MongoDB</h3>
-                            </div>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>JFrog</h3></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Databases</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>MySQL</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>PostgreSQL</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>MongoDB</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill" class="icon">
+                            <div><h3>Redis</h3></div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow Icon"
-        class = "icon arrow" 
-        onclick="location.href='./#projects'"
-        />
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
     <section id="projects">
       <p class="section__text__p1">check out my</p>
@@ -316,74 +250,52 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/project-5.png" alt="MediClarify Project" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">MediClarify - AI Medical Document Simplifier</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/MediClarify'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=b9zeLKd0p5I'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-4.png" alt="EcoLens Project" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">EcoLens - Sustainability Tracker</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/eco-lens'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=xkZDamh2WCg'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Nobu Project" class="project-img">
             </div>
             <h2 class="experience-sub-title project-title">Nobu - Money Tracker</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ismailahmed1/money-tracker-app'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/Intiopx86-o'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/money-tracker-app'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/Intiopx86-o'">Live Demo</button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/project-2.png" alt="Sewy Project" class="project-img">
             </div>
             <h2 class="experience-sub-title project-title">Sewy - Football Manager AI Journalist</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ismailahmed1/football-manager-bot'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/vZXK1BLXOJc'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/football-manager-bot'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/vZXK1BLXOJc'">Live Demo</button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/project-3.png" alt="Portfolio Project" class="project-img">
             </div>
             <h2 class="experience-sub-title project-title">Personal Website / Portfolio</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ismailahmed1/ahmed-ismail-portfolio'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://ahmedismail.ca'"
-              >
-                Live Demo (You're looking at it!)
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/ahmed-ismail-portfolio'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://ahmedismail.ca'">Live Demo</button>
             </div>
           </div>
         </div>
@@ -395,38 +307,32 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id ="contact">
-        <p class ="section__text__p1">be sure to get in touch!</p>
-        <h1 class ="title">Contact Me</h1>
-        <div class = "contact-info-upper-container">
-            <div class ="contact-info-container">
-                <img src="./assets/email.png" 
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-                >
+    <section id="contact">
+        <p class="section__text__p1">be sure to get in touch!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
                 <p><a href="mailto:ahmedismail.tech@gmail.com">ahmedismail.tech@gmail.com</a></p>
             </div>
-            <div class ="contact-info-container">
-                <img src="./assets/linkedin.png" 
-                alt="Linkedin icon"
-                class="icon contact-icon"
-                >
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
                 <p><a href="https://www.linkedin.com/in/ismailahmed1/">LinkedIn</a></p>
             </div>
         </div>
     </section>
     <footer>
         <nav>
-            <div class ="nav-links-container">
-                <ul class = "nav-links">
-                    <li><a href = "#about">About</a></li>
-                    <li><a href = "#experience">Technical Skills</a></li>
-                    <li><a href = "#projects">Projects</a></li>
-                    <li><a href = "#contact">Contact</a></li>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Technical Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025. Ahmed Ismail. All Rights Reserved. </p>
+        <p>Copyright &copy; <span id="year"></span> Ahmed Ismail. All Rights Reserved.</p>
     </footer>
     <script src = "script.js"></script>
 </body>

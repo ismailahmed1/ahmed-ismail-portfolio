@@ -1,6 +1,7 @@
 @media screen and (max-width: 1400px) {
     #profile {
-        height: 83vh;
+        min-height: 83vh;
+        height: auto;
         margin-bottom: 6rem;
     }
     .about-containers {
@@ -8,7 +9,13 @@
     }
     #contact,
     #projects {
-        height: fit-content;
+        height: auto;
+        min-height: fit-content;
+    }
+
+    /* Projects grid - 2 columns at this breakpoint */
+    #projects .about-containers {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Fix about section zoom issues */
@@ -78,6 +85,16 @@
         margin-top: 0;
     }
 
+    /* Projects grid - 2 columns */
+    #projects .about-containers {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    #projects .color-container {
+        max-width: 100%;
+    }
+
     /* Fix about section layout at 1200px */
     #about .about-details-container {
         flex-direction: column;
@@ -108,11 +125,14 @@
 @media screen and (max-width: 600px) {
     #contact,
     footer {
-        height: 40vh;
+        min-height: 40vh;
+        height: auto;
     }
     #profile {
-        height: 83vh;
+        min-height: auto;
+        height: auto;
         margin-bottom: 0;
+        padding-bottom: 2rem;
     }
     article {
         font-size: 1rem;
@@ -163,35 +183,36 @@
     #projects .experience-details-container {
         margin-top: 2rem;
     }
-    
+
     #projects .about-containers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 2rem;
+        justify-items: center;
     }
-    
+
     #projects .details-container.color-container {
         width: 90%;
         max-width: 500px;
         margin: 0 auto;
     }
-    
-    #projects .article-container {
-        display: block;
-    }
-    
+
     #projects .project-img {
         width: 100%;
-        height: auto;
-        border-radius: 1.5rem;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.75rem;
     }
-    
+
+    #projects .color-container .article-container {
+        aspect-ratio: 16 / 10;
+    }
+
     #projects .project-title {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: 1rem 0;
     }
-    
+
     #projects .btn-container {
         display: flex;
         justify-content: center;
