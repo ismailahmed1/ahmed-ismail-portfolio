@@ -13,9 +13,9 @@
         min-height: fit-content;
     }
 
-    /* Projects grid - 2 columns at this breakpoint */
+    /* Projects - flex items shrink naturally at this breakpoint */
     #projects .about-containers {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
     /* Fix about section zoom issues */
@@ -85,14 +85,12 @@
         margin-top: 0;
     }
 
-    /* Projects grid - 2 columns */
     #projects .about-containers {
-        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
     #projects .color-container {
-        max-width: 100%;
+        flex: 0 1 300px;
     }
 
     /* Fix about section layout at 1200px */
@@ -185,27 +183,12 @@
     }
 
     #projects .about-containers {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        justify-items: center;
+        gap: 1.5rem;
     }
 
-    #projects .details-container.color-container {
-        width: 90%;
+    #projects .color-container {
+        flex: 0 1 90%;
         max-width: 500px;
-        margin: 0 auto;
-    }
-
-    #projects .project-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0.75rem;
-    }
-
-    #projects .color-container .article-container {
-        aspect-ratio: 16 / 10;
     }
 
     #projects .project-title {
