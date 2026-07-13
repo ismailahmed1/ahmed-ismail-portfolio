@@ -110,6 +110,11 @@ section p + p {
     margin-top: 0.9rem;
 }
 
+.section-note {
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+}
+
 /* Rows: an accent bar wipes in on hover and the row eases right */
 .rows {
     list-style: none;
