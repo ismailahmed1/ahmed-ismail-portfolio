@@ -3,203 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahmed Ismail - AI/ML Software Engineer Intern at TrendAI. Incoming Software Engineer Intern at Tesla. Computer Systems Engineering student at Carleton University. View my projects and experience.">
-    <title>Ahmed Ismail | Computer Systems Engineering Student</title>
+    <meta name="description" content="Ahmed Ismail - Computer Systems Engineering student at Carleton University. Incoming Software Engineer Intern at Tesla. Previously TrendAI, Ross Video, Nokia.">
+    <title>Ahmed Ismail</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Ahmed Ismail</div>
-        <div style="display: flex; align-items: center;">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                <img src="./assets/moon.svg" alt="Toggle theme" class="icon" id="theme-icon">
-            </button>
-        </div>
-    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <img src="./assets/moon.svg" alt="" id="theme-icon">
+    </button>
 
-    <nav id="hamburger-nav">
-        <div class="logo">Ahmed Ismail</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </div>
-        <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
-            <img src="./assets/moon.svg" alt="Toggle theme" class="icon" id="theme-icon-mobile">
-        </button>
-    </nav>
+    <main>
+        <header>
+            <h1>Ahmed Ismail</h1>
+            <p class="subtitle">Computer Systems Engineering @ Carleton &middot; Incoming SWE Intern @ Tesla</p>
+            <p class="links">
+                <a href="mailto:ahmedismail.tech@gmail.com">email</a>
+                <a href="https://github.com/ismailahmed1">github</a>
+                <a href="https://www.linkedin.com/in/ismailahmed1/">linkedin</a>
+                <a href="https://x.com/therealcanadawy">x</a>
+                <a href="./assets/Ahmed_Ismail_Resume.pdf">resume</a>
+            </p>
+        </header>
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Ahmed Ismail's Profile Picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Computer Systems Engineering Student</p>
-            <h1 class="title">Ahmed Ismail</h1>
-            <p class="section__text__p2">Incoming SWE Intern @ Tesla</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Ahmed_Ismail_Resume.pdf')">Resume / CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ismailahmed1/'">
-                <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/ismailahmed1'">
-                <img src="./assets/x.svg" alt="X Profile" class="icon" onclick="location.href='https://x.com/therealcanadawy'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">so, who am I?</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
-                        <h3>Work Experience</h3>
-                        <p>Tesla - Software Engineer Intern (Incoming, Summer 2026)<br>TrendAI - AI/ML Software Engineer Intern<br>Ross Video - Software Engineer Intern<br>Nokia - Software Engineer Intern<br><br>Please refer to my resume for more details :)</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon">
-                        <h3>Education</h3>
-                        <p>Carleton University<br>Bachelor of Engineering (B.Eng.)<br>Computer Systems Engineering - 4th Year<br>GPA: 3.7/4.0</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <ul class="about-bullets">
-                        <li>Fourth-year Computer Systems Engineering student at Carleton with a 3.7 GPA, mostly working in ML and cloud infrastructure and genuinely enjoying it.</li>
-                        <li>Heading to Tesla this summer as a Software Engineer Intern, working on AI/Computer Vision systems for Robotaxi out in Fremont, CA.</li>
-                        <li>Just wrapped up at TrendAI on the AI Security team, building real-time ML pipelines, guardrail detection systems, and Terraform IaC across AWS.</li>
-                        <li>Previously at Ross Video on test automation with Java/Selenium, and Nokia before that, writing Python tooling for 800G optical hardware systems.</li>
-                        <li>Shipped ShaghalnyShokran solo, an AI resume analyzer that's now crossed 1000+ users with real-time streaming, ATS scoring, and multi-model support.</li>
-                        <li>Also TA'd at Carleton, won HackTheFuture, and always have a few side projects cooking on weekends and late nights.</li>
-                        <li>Outside of code: gym, video games, Marvel marathons, and visiting family back in Egypt whenever I can swing it.</li>
-                        <li>If something here caught your eye, let's talk. I'd be a good fit for your team, take my word for it :)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">check out my</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/shaghalny-shokran-project.png" alt="ShaghalnyShokran Project" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">ShaghalnyShokran - AI Resume & ATS Checker</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://shaghalnyshokran.com'">Website</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-5.png" alt="MediClarify Project" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">MediClarify - AI Medical Document Simplifier</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/MediClarify'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=b9zeLKd0p5I'">Live Demo</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-4.png" alt="EcoLens Project" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">EcoLens - Sustainability Tracker</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/eco-lens'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=xkZDamh2WCg'">Live Demo</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-1.png" alt="Nobu Project" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Nobu - Money Tracker</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/money-tracker-app'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/Intiopx86-o'">Live Demo</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-2.png" alt="Sewy Project" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Sewy - Football Manager AI Journalist</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/football-manager-bot'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/vZXK1BLXOJc'">Live Demo</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-3.png" alt="Portfolio Project" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Personal Website / Portfolio</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ismailahmed1/ahmed-ismail-portfolio'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://ahmedismail.ca'">Live Demo</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">be sure to get in touch!</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:ahmedismail.tech@gmail.com">ahmedismail.tech@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/ismailahmed1/">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/x.svg" alt="X icon" class="icon contact-icon">
-                <p><a href="https://x.com/therealcanadawy">I post cool stuff here</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &copy; <span id="year"></span> Ahmed Ismail. All Rights Reserved.</p>
-    </footer>
-    <script src = "script.js"></script>
+        <section>
+            <h2><span class="prompt">$</span> whoami</h2>
+            <p>Fourth-year Computer Systems Engineering student at Carleton, mostly working in ML and cloud infrastructure. This summer I'm at Tesla in Fremont as a Software Engineer Intern on AI/Computer Vision systems for Robotaxi.</p>
+            <p>Before that I was on the AI Security team at TrendAI building real-time ML pipelines, guardrail detection, and Terraform IaC on AWS. Also shipped ShaghalnyShokran solo — an AI resume analyzer now past 1000+ users.</p>
+            <p>Outside of code: gym, video games, Marvel marathons, and visiting family in Egypt whenever I can swing it.</p>
+        </section>
+
+        <section>
+            <h2><span class="prompt">$</span> cat experience.txt</h2>
+            <ul class="rows">
+                <li><span class="role">Software Engineer Intern</span> <span class="org">Tesla</span> <span class="when">Summer 2026</span></li>
+                <li><span class="role">AI/ML Software Engineer Intern</span> <span class="org">TrendAI</span> <span class="when">2025&ndash;26</span></li>
+                <li><span class="role">Software Engineer Intern</span> <span class="org">Ross Video</span> <span class="when">2024</span></li>
+                <li><span class="role">Software Engineer Intern</span> <span class="org">Nokia</span> <span class="when">2023</span></li>
+                <li><span class="role">Teaching Assistant</span> <span class="org">Carleton University</span> <span class="when">2023&ndash;24</span></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><span class="prompt">$</span> ls projects/</h2>
+            <ul class="rows">
+                <li>
+                    <span class="name">ShaghalnyShokran</span>
+                    <span class="desc">AI resume &amp; ATS checker, 1000+ users</span>
+                    <span class="when"><a href="https://shaghalnyshokran.com">site</a></span>
+                </li>
+                <li>
+                    <span class="name">MediClarify</span>
+                    <span class="desc">AI medical document simplifier</span>
+                    <span class="when"><a href="https://github.com/ismailahmed1/MediClarify">code</a> <a href="https://www.youtube.com/watch?v=b9zeLKd0p5I">demo</a></span>
+                </li>
+                <li>
+                    <span class="name">EcoLens</span>
+                    <span class="desc">Sustainability tracker</span>
+                    <span class="when"><a href="https://github.com/ismailahmed1/eco-lens">code</a> <a href="https://www.youtube.com/watch?v=xkZDamh2WCg">demo</a></span>
+                </li>
+                <li>
+                    <span class="name">Nobu</span>
+                    <span class="desc">Money tracker</span>
+                    <span class="when"><a href="https://github.com/ismailahmed1/money-tracker-app">code</a> <a href="https://youtu.be/Intiopx86-o">demo</a></span>
+                </li>
+                <li>
+                    <span class="name">Sewy</span>
+                    <span class="desc">Football manager AI journalist</span>
+                    <span class="when"><a href="https://github.com/ismailahmed1/football-manager-bot">code</a> <a href="https://youtu.be/vZXK1BLXOJc">demo</a></span>
+                </li>
+                <li>
+                    <span class="name">Portfolio</span>
+                    <span class="desc">This page</span>
+                    <span class="when"><a href="https://github.com/ismailahmed1/ahmed-ismail-portfolio">code</a></span>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><span class="prompt">$</span> <span class="cursor">&#9608;</span></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
