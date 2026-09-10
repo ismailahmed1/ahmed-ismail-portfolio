@@ -115,6 +115,34 @@ const kicker = document.querySelector('.kicker');
 const kickerRun = asCommand(kicker, []);
 kickerRun();
 
+/* ---------- Section nav: highlight whatever is currently in view ---------- */
+
+const navLinks = [...document.querySelectorAll('.section-nav a')];
+const navTargets = navLinks.map((a) => document.querySelector(a.getAttribute('href')));
+
+if (navLinks.length) {
+    let queued = false;
+
+    const syncNav = () => {
+        let current = 0;
+        navTargets.forEach((section, i) => {
+            if (section && section.getBoundingClientRect().top <= 140) current = i;
+        });
+        navLinks.forEach((a, i) => a.classList.toggle('active', i === current));
+    };
+
+    window.addEventListener('scroll', () => {
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(() => {
+            syncNav();
+            queued = false;
+        });
+    }, { passive: true });
+
+    syncNav();
+}
+
 /* ---------- Clock ---------- */
 
 const clock = document.getElementById('clock');
