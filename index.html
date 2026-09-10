@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahmed Ismail - AI/ML Software Engineer at Tesla working on computer vision. Computer Systems Engineering at Carleton University. Previously TrendAI, Ross Video, Nokia.">
+    <meta name="description" content="Ahmed Ismail - Software Engineer Intern on the Database Platform team at Shopify. Previously Tesla, TrendAI, Ross Video, Nokia. Computer Systems Engineering at Carleton University.">
     <title>Ahmed Ismail</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <img src="./assets/moon.svg" alt="" id="theme-icon">
-    </button>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <div class="toolbar">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <img src="./assets/moon.svg" alt="" id="theme-icon">
+        </button>
+    </div>
 
     <main>
-        <header class="reveal">
-            <h1>Ahmed Ismail</h1>
-            <p class="subtitle">Computer Systems Engineering @ Carleton</p>
-            <p class="status"><span class="dot" aria-hidden="true"></span> AI/ML Software Engineer @ Tesla &mdash; Bay Area</p>
+        <header class="hero">
+            <p class="kicker"><span class="prompt">$</span> ./ahmed --introduce</p>
+            <h1 id="name" data-text="Ahmed Ismail">Ahmed Ismail</h1>
+            <p class="subtitle">
+                <span id="role-text"></span><span class="caret" aria-hidden="true">▊</span>
+            </p>
+            <p class="status"><span class="dot" aria-hidden="true"></span> Software Engineer Intern @ Shopify &mdash; Database Platform, Ottawa</p>
             <p class="links">
-                <a href="mailto:ahmedismail.tech@gmail.com">email</a>
+                <a href="mailto:ahmedismail.tech@gmail.com" id="email-link" data-email="ahmedismail.tech@gmail.com">email</a>
                 <a href="https://github.com/ismailahmed1">github</a>
                 <a href="https://www.linkedin.com/in/ismailahmed1/">linkedin</a>
                 <a href="https://x.com/therealcanadawy">x</a>
@@ -26,68 +33,190 @@
             </p>
         </header>
 
-        <section class="reveal">
+        <section id="about">
             <h2><span class="prompt">$</span> whoami</h2>
-            <p>Computer Systems Engineering at Carleton (B.Eng., graduating April 2027), mostly working in ML and cloud infrastructure. Right now I'm at Tesla in the Bay Area as an AI/ML Software Engineer, training YOLO damage-classification models in PyTorch and OpenCV and building the hardware pipeline that feeds them.</p>
-            <p>Before that I was at TrendAI on real-time ML pipelines, AI guardrail detection, and Terraform IaC across AWS. Earlier: test automation at Ross Video, and Python tooling for 800G optical systems at Nokia. Also shipped ShaghalnyShokran solo; an AI resume analyzer now past 6500+ users.</p>
-            <p>Outside of code: gym, video games, Marvel marathons, and visiting family in Egypt whenever I can swing it.</p>
-        </section>
+            <p>Computer Systems Engineering student at Carleton, graduating April 2027.</p>
+            <p>I'm a Software Engineer Intern at Shopify on the Database Platform team, working on database services. Before this I was at Tesla on computer vision for vehicle service, TrendAI on real-time ML infrastructure, Ross Video on test automation, and Nokia on validation tooling for optical systems.</p>
+            <p>Outside of code: gym, video games, Marvel marathons, and Egypt whenever I can swing it.</p>
 
-        <section class="reveal">
-            <h2><span class="prompt">$</span> cat experience.txt</h2>
-            <ul class="rows">
-                <li><span class="role">AI/ML Software Engineer</span> <span class="org">Tesla &middot; Bay Area</span> <span class="when">May 2026 &ndash; Present</span></li>
-                <li><span class="role">AI/ML Software Engineer Intern</span> <span class="org">TrendAI &middot; Ottawa</span> <span class="when">Jan &ndash; Apr 2026</span></li>
-                <li><span class="role">Software Engineer Intern</span> <span class="org">Ross Video &middot; Ottawa</span> <span class="when">Sep &ndash; Dec 2025</span></li>
-                <li><span class="role">Software Engineer Intern</span> <span class="org">Nokia &middot; Ottawa</span> <span class="when">Jan &ndash; Aug 2025</span></li>
-                <li><span class="role">Undergraduate Teaching Assistant</span> <span class="org">Carleton University</span> <span class="when">Sep &ndash; Dec 2024</span></li>
+            <ul class="stats" aria-label="At a glance">
+                <li><b>70K+</b><span>followers taught</span></li>
+                <li><b>4.25M</b><span>monthly impressions</span></li>
+                <li><b>7,000+</b><span>users shipped to</span></li>
+                <li><b>3.7</b><span>GPA / 4.0</span></li>
             </ul>
         </section>
 
-        <section class="reveal">
+        <section id="experience">
+            <h2><span class="prompt">$</span> cat experience.txt</h2>
+            <ol class="timeline">
+                <li class="current">
+                    <details>
+                        <summary>
+                            <span class="role">Software Engineer Intern</span>
+                            <span class="org">Shopify &middot; Ottawa, Ontario, Canada</span>
+                            <span class="when">Sep 2026 &ndash; Present</span>
+                        </summary>
+                        <ul class="bullets">
+                            <li>Incoming Fall 2026 intern joining the Database Platform team (Database Services)</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>
+                            <span class="role">Software Engineer Intern</span>
+                            <span class="org">Tesla &middot; Fremont, California, United States</span>
+                            <span class="when">May 2026 &ndash; Aug 2026</span>
+                        </summary>
+                        <ul class="bullets">
+                            <li>Trained YOLO damage-classification models in PyTorch/OpenCV reaching 98.9% recall at a 2.1% false-positive rate in production</li>
+                            <li>Built an interior-condition model combining polygon segmentation, anomaly detection, and classification to automate service</li>
+                            <li>Diagnosed Ansible deployment bug bricking single-NIC devices by binding uplink and static IP to one interface, raising uptime 50%</li>
+                            <li>Built hardware API linking cameras and Raspberry Pi to automate vehicle service actions, cutting manual inspection 70%</li>
+                            <li>Cut labeling time 50% with a semi-automated Label Studio pipeline feeding 10K+ high-quality annotations into training</li>
+                            <li>Built Arduino-driven laser trigger cutting camera capture latency to &lt;10us and reducing missed/blurred frames by 90%</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>
+                            <span class="role">Software Engineer Intern</span>
+                            <span class="org">TrendAI &middot; Ottawa, Ontario, Canada</span>
+                            <span class="when">Jan 2026 &ndash; Apr 2026</span>
+                        </summary>
+                        <ul class="bullets">
+                            <li>Deployed a real-time ML pipeline with Python, PyTorch, TensorFlow, and OpenVINO for low-latency AI guardrail detection</li>
+                            <li>Implemented Terraform IaC for AWS SageMaker Model Registry across 10 regions, reducing ML model provisioning time by 90%</li>
+                            <li>Designed an AWS CloudWatch dashboard for 15+ Lambdas across 4 environments, increasing alarm detection speed by 28%</li>
+                            <li>Established CI/CD with GitHub Actions and multi-architecture Docker builds, enabling consistent and reliable daily releases</li>
+                            <li>Engineered Grafana k6 framework measuring throughput, latency, and SLA compliance, achieving 4x faster load testing</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>
+                            <span class="role">Software Engineer Intern</span>
+                            <span class="org">Ross Video Ltd. &middot; Ottawa, Ontario, Canada</span>
+                            <span class="when">Sep 2025 &ndash; Dec 2025</span>
+                        </summary>
+                        <ul class="bullets">
+                            <li>Developed video validation framework using Java/Selenium/Maven with 10+ page models and reusable TestNG components</li>
+                            <li>Refactored legacy automation framework to Java 14+, reducing code duplication by 40% and cutting test execution time by 30%</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>
+                            <span class="role">Software Engineer Intern</span>
+                            <span class="org">Nokia &middot; Ottawa, Ontario, Canada</span>
+                            <span class="when">Jan 2025 &ndash; Aug 2025</span>
+                        </summary>
+                        <ul class="bullets">
+                            <li>Engineered unified Python validation interface replacing legacy framework for 800G optical systems, reducing test setup time by 70%</li>
+                            <li>Migrated 50+ legacy Perl/TCL test modules to Python, boosting test speed by 25% and enabling reuse across 3+ product lines</li>
+                        </ul>
+                    </details>
+                </li>
+            </ol>
+        </section>
+
+        <section id="skills">
+            <h2><span class="prompt">$</span> cat skills.txt</h2>
+            <dl class="skills">
+                <dt>languages</dt>
+                <dd>Python, Java, C, C++, Rust, JavaScript, TypeScript, Go, Bash, SQL</dd>
+
+                <dt>cloud / devops</dt>
+                <dd>AWS, Docker, Serverless Framework, Terraform, OpenTofu, GitHub Actions, Linux</dd>
+
+                <dt>frameworks</dt>
+                <dd>Flask, React, Express.js, Node.js, Spring Boot, Selenium, TestNG, PyTest, k6, gRPC, Git</dd>
+
+                <dt>data</dt>
+                <dd>MySQL, PostgreSQL, MongoDB, Redis</dd>
+
+                <dt>ai / ml</dt>
+                <dd>PyTorch, TensorFlow, OpenCV, OpenVINO, NumPy, SageMaker, Databricks, YOLO</dd>
+
+                <dt>ai tools</dt>
+                <dd>Cursor, Claude Code, Codex, OpenClaw</dd>
+            </dl>
+        </section>
+
+        <section id="projects">
             <h2><span class="prompt">$</span> ls projects/</h2>
-            <ul class="rows">
-                <li>
-                    <span class="name">Meeting Voice Agent</span>
-                    <span class="desc">Real-time Google Meet agent &mdash; YC Hackathon</span>
-                    <span class="when"><a href="https://github.com/prmsregmi/carleton">code</a> <a href="https://www.youtube.com/watch?v=XdPGX2aY5UA">demo</a></span>
-                </li>
-                <li>
+            <ul class="cards">
+                <li class="card">
                     <span class="name">ShaghalnyShokran</span>
-                    <span class="desc">AI resume &amp; ATS checker, 6500+ users</span>
-                    <span class="when"><a href="https://shaghalnyshokran.com">site</a></span>
+                    <span class="desc">AI resume reviewer &mdash; real-time streaming, ATS scoring, tuned prompts across flagship models. 7,000+ users.</span>
+                    <span class="tags"><i>Python</i><i>Flask</i><i>PostgreSQL</i><i>Redis</i><i>Anthropic API</i><i>Railway</i></span>
+                    <span class="actions">
+                        <a href="https://shaghalnyshokran.com">site</a>
+                    </span>
                 </li>
-                <li>
+                <li class="card">
+                    <span class="name">Meeting Voice Agent</span>
+                    <span class="desc">Joins Google Meet, transcribes live, talks back to participants, and auto-extracts tasks into an Obsidian vault. YC Hackathon, Summer 2026.</span>
+                    <span class="tags"><i>TypeScript</i><i>Next.js</i><i>FastAPI</i><i>Pipecat</i><i>Claude SDK</i><i>Deepgram</i></span>
+                    <span class="actions">
+                        <a href="https://github.com/prmsregmi/carleton">code</a>
+                        <a href="https://www.youtube.com/watch?v=XdPGX2aY5UA">demo</a>
+                    </span>
+                </li>
+                <li class="card">
                     <span class="name">MediClarify</span>
                     <span class="desc">AI medical document simplifier</span>
-                    <span class="when"><a href="https://github.com/ismailahmed1/MediClarify">code</a> <a href="https://www.youtube.com/watch?v=b9zeLKd0p5I">demo</a></span>
+                    <span class="tags"><i>ai</i><i>nlp</i></span>
+                    <span class="actions">
+                        <a href="https://github.com/ismailahmed1/MediClarify">code</a>
+                        <a href="https://www.youtube.com/watch?v=b9zeLKd0p5I">demo</a>
+                    </span>
                 </li>
-                <li>
+                <li class="card">
                     <span class="name">EcoLens</span>
                     <span class="desc">Sustainability tracker</span>
-                    <span class="when"><a href="https://github.com/ismailahmed1/eco-lens">code</a> <a href="https://www.youtube.com/watch?v=xkZDamh2WCg">demo</a></span>
+                    <span class="tags"><i>sustainability</i></span>
+                    <span class="actions">
+                        <a href="https://github.com/ismailahmed1/eco-lens">code</a>
+                        <a href="https://www.youtube.com/watch?v=xkZDamh2WCg">demo</a>
+                    </span>
                 </li>
-                <li>
+                <li class="card">
                     <span class="name">Nobu</span>
                     <span class="desc">Money tracker</span>
-                    <span class="when"><a href="https://github.com/ismailahmed1/money-tracker-app">code</a> <a href="https://youtu.be/Intiopx86-o">demo</a></span>
+                    <span class="tags"><i>fintech</i></span>
+                    <span class="actions">
+                        <a href="https://github.com/ismailahmed1/money-tracker-app">code</a>
+                        <a href="https://youtu.be/Intiopx86-o">demo</a>
+                    </span>
                 </li>
-                <li>
+                <li class="card">
                     <span class="name">Sewy</span>
                     <span class="desc">Football manager AI journalist</span>
-                    <span class="when"><a href="https://github.com/ismailahmed1/football-manager-bot">code</a> <a href="https://youtu.be/vZXK1BLXOJc">demo</a></span>
+                    <span class="tags"><i>llm</i><i>bot</i></span>
+                    <span class="actions">
+                        <a href="https://github.com/ismailahmed1/football-manager-bot">code</a>
+                        <a href="https://youtu.be/vZXK1BLXOJc">demo</a>
+                    </span>
                 </li>
-                <li>
+                <li class="card">
                     <span class="name">Portfolio</span>
-                    <span class="desc">This page</span>
-                    <span class="when"><a href="https://github.com/ismailahmed1/ahmed-ismail-portfolio">code</a></span>
+                    <span class="desc">This page &mdash; there's a working shell in the corner, go type <code>sudo</code> in it</span>
+                    <span class="tags"><i>html</i><i>css</i><i>js</i></span>
+                    <span class="actions">
+                        <a href="https://github.com/ismailahmed1/ahmed-ismail-portfolio">code</a>
+                    </span>
                 </li>
             </ul>
         </section>
 
-        <section class="reveal">
+        <section id="socials">
             <h2><span class="prompt">$</span> ls socials/</h2>
-            <p class="section-note">I make computer science content &mdash; come say hi.</p>
+            <p class="section-note">I've been making CS content since 2022 &mdash; data structures, algorithms, and career advice. 70K+ followers in under three years, 4.25M monthly impressions, top post at 1.8M views.</p>
             <ul class="rows">
                 <li>
                     <span class="name">TikTok</span>
@@ -104,10 +233,52 @@
             </ul>
         </section>
 
-        <footer class="reveal">
+        <section id="education">
+            <h2><span class="prompt">$</span> cat education.txt</h2>
+            <ul class="rows">
+                <li>
+                    <span class="name">Carleton University</span>
+                    <span class="desc">B.Eng., Computer Systems Engineering &mdash; GPA 3.7/4.0</span>
+                    <span class="when">Expected Apr 2027</span>
+                </li>
+            </ul>
+            <p class="section-note coursework">Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Embedded Systems, Operating Systems.</p>
+        </section>
+
+        <footer>
             <p><span class="prompt">$</span> <span class="cursor">&#9608;</span></p>
         </footer>
     </main>
+
+    <!-- Interactive terminal -->
+    <button id="term-open" class="term-fab" aria-label="Open interactive terminal">
+        <span class="fab-prompt">&gt;_</span>
+        <span class="fab-text">terminal</span>
+        <kbd>`</kbd>
+    </button>
+
+    <div class="term" id="term" hidden>
+        <div class="term-window" role="dialog" aria-modal="true" aria-label="Interactive terminal">
+            <div class="term-bar">
+                <span class="tl red"></span><span class="tl amber"></span><span class="tl green"></span>
+                <span class="term-title">ahmed@portfolio — zsh</span>
+                <button id="term-close" class="term-x" aria-label="Close terminal">esc</button>
+            </div>
+            <div class="term-body" id="term-body" tabindex="-1"></div>
+            <form class="term-input" id="term-form" autocomplete="off">
+                <label class="prompt" for="term-line">ahmed@portfolio ~ %</label>
+                <input id="term-line" type="text" spellcheck="false" autocapitalize="off" aria-label="Type a command">
+            </form>
+        </div>
+    </div>
+
+    <div class="statusbar" aria-hidden="true">
+        <span>~/ahmed-ismail</span>
+        <span class="sep">·</span>
+        <span id="clock">--:--</span>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script src="script.js"></script>
 </body>
