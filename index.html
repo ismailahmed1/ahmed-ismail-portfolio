@@ -5,97 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ahmed Ismail - Software Engineer Intern on the Database Platform team at Shopify. Previously Tesla, TrendAI, Ross Video, Nokia. Computer Systems Engineering at Carleton University.">
     <title>Ahmed Ismail</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%238b5a3c'/%3E%3Crect width='8' height='3' fill='%236cc04a'/%3E%3Crect y='3' x='1' width='1' height='1' fill='%236cc04a'/%3E%3Crect y='3' x='5' width='2' height='1' fill='%236cc04a'/%3E%3Crect x='2' y='5' width='1' height='1' fill='%236e4430'/%3E%3Crect x='5' y='6' width='2' height='1' fill='%236e4430'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        /* Set the theme before first paint so the sky never flashes the wrong time of day */
+        (function () {
+            var stored = null;
+            try { stored = localStorage.getItem('theme'); } catch (e) {}
+            var night = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', night ? 'dark' : 'light');
+        })();
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-grid" aria-hidden="true"></div>
+    <a class="skip" href="#about">Skip to content</a>
 
-    <div class="toolbar">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-            <img src="./assets/moon.svg" alt="" id="theme-icon">
+    <header class="surface">
+        <div class="sky" aria-hidden="true">
+            <!--@stars--><svg class="stars" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><rect class="s-star s-dim" x="288" y="45" width="1" height="1"/><rect class="s-star s-dim" x="264" y="109" width="1" height="1"/><rect class="s-star s-dim" x="22" y="63" width="1" height="1"/><rect class="s-star" x="54" y="47" width="1" height="1"/><rect class="s-star s-dim" x="41" y="19" width="1" height="1"/><rect class="s-star s-dim" x="15" y="44" width="1" height="1"/><rect class="s-star s-dim" x="310" y="2" width="1" height="1"/><rect class="s-star" x="104" y="111" width="1" height="1"/><rect class="s-star" x="248" y="75" width="1" height="1"/><rect class="s-star s-dim" x="133" y="99" width="1" height="1"/><rect class="s-star" x="49" y="57" width="1" height="1"/><rect class="s-star s-dim" x="311" y="16" width="1" height="1"/><rect class="s-star s-dim" x="19" y="43" width="1" height="1"/><rect class="s-star s-dim" x="92" y="48" width="1" height="1"/><rect class="s-star" x="26" y="4" width="1" height="1"/><rect class="s-star s-dim" x="361" y="58" width="1" height="1"/><rect class="s-star" x="32" y="110" width="1" height="1"/><rect class="s-star" x="203" y="15" width="1" height="1"/><rect class="s-star s-dim" x="46" y="32" width="1" height="1"/><rect class="s-star s-dim" x="119" y="82" width="1" height="1"/><rect class="s-star s-dim" x="342" y="64" width="1" height="1"/><rect class="s-star s-dim" x="229" y="108" width="1" height="1"/><rect class="s-star s-dim" x="120" y="92" width="1" height="1"/><rect class="s-star" x="19" y="32" width="1" height="1"/><rect class="s-star" x="30" y="70" width="1" height="1"/><rect class="s-star" x="24" y="33" width="1" height="1"/><rect class="s-star" x="363" y="94" width="1" height="1"/><rect class="s-star s-dim" x="247" y="7" width="1" height="1"/><rect class="s-star s-dim" x="162" y="96" width="1" height="1"/><rect class="s-star" x="101" y="86" width="1" height="1"/><rect class="s-star s-dim" x="301" y="75" width="1" height="1"/><rect class="s-star s-dim" x="334" y="13" width="1" height="1"/><rect class="s-star s-dim" x="190" y="32" width="1" height="1"/><rect class="s-star s-dim" x="191" y="61" width="1" height="1"/><rect class="s-star" x="225" y="30" width="1" height="1"/><rect class="s-star s-dim" x="346" y="1" width="1" height="1"/><rect class="s-star s-dim" x="99" y="102" width="1" height="1"/><rect class="s-star" x="112" y="9" width="1" height="1"/><rect class="s-star s-dim" x="191" y="95" width="1" height="1"/><rect class="s-star" x="228" y="12" width="1" height="1"/><rect class="s-star s-dim" x="197" y="107" width="1" height="1"/><rect class="s-star" x="38" y="57" width="1" height="1"/><rect class="s-star s-dim" x="165" y="105" width="1" height="1"/><rect class="s-star s-dim" x="59" y="80" width="1" height="1"/><rect class="s-star" x="169" y="28" width="1" height="1"/><rect class="s-star s-dim" x="92" y="91" width="1" height="1"/><rect class="s-star" x="74" y="56" width="1" height="1"/><rect class="s-star s-dim" x="136" y="53" width="1" height="1"/><rect class="s-star s-dim" x="79" y="3" width="1" height="1"/><rect class="s-star" x="151" y="42" width="1" height="1"/><rect class="s-star s-dim" x="133" y="62" width="1" height="1"/><rect class="s-star s-dim" x="233" y="61" width="1" height="1"/><rect class="s-star" x="262" y="7" width="1" height="1"/><rect class="s-star" x="342" y="27" width="1" height="1"/><rect class="s-star s-dim" x="146" y="15" width="1" height="1"/><rect class="s-star s-dim" x="103" y="46" width="1" height="1"/><rect class="s-star" x="133" y="30" width="1" height="1"/><rect class="s-star s-dim" x="49" y="49" width="1" height="1"/><rect class="s-star" x="83" y="7" width="1" height="1"/><rect class="s-star" x="150" y="18" width="1" height="1"/><rect class="s-star" x="8" y="56" width="1" height="1"/><rect class="s-star s-dim" x="174" y="65" width="1" height="1"/><rect class="s-star" x="0" y="101" width="1" height="1"/><rect class="s-star s-dim" x="269" y="36" width="1" height="1"/><rect class="s-star" x="222" y="5" width="1" height="1"/><rect class="s-star" x="111" y="35" width="1" height="1"/><rect class="s-star s-dim" x="70" y="107" width="1" height="1"/><rect class="s-star" x="394" y="29" width="1" height="1"/><rect class="s-star s-dim" x="100" y="76" width="1" height="1"/><rect class="s-star" x="44" y="77" width="1" height="1"/><rect class="s-star s-dim" x="389" y="35" width="1" height="1"/><rect class="s-star" x="70" y="78" width="1" height="1"/><rect class="s-star s-dim" x="321" y="103" width="1" height="1"/><rect class="s-star s-dim" x="157" y="25" width="1" height="1"/><rect class="s-star" x="354" y="93" width="1" height="1"/><rect class="s-star" x="369" y="7" width="1" height="1"/><rect class="s-star s-dim" x="177" y="42" width="1" height="1"/><rect class="s-star" x="327" y="110" width="1" height="1"/><rect class="s-star s-dim" x="46" y="1" width="1" height="1"/><rect class="s-star s-dim" x="390" y="61" width="1" height="1"/><rect class="s-star s-dim" x="340" y="34" width="1" height="1"/><rect class="s-star" x="288" y="106" width="1" height="1"/><rect class="s-star" x="18" y="20" width="1" height="1"/><rect class="s-star" x="294" y="76" width="1" height="1"/><rect class="s-star" x="182" y="66" width="1" height="1"/><rect class="s-star s-dim" x="264" y="9" width="1" height="1"/><rect class="s-star" x="365" y="31" width="1" height="1"/><rect class="s-star" x="164" y="99" width="1" height="1"/><rect class="s-star" x="195" y="73" width="1" height="1"/><rect class="s-star" x="31" y="37" width="1" height="1"/><path class="s-star s-bright" d="M378 66h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path class="s-star s-bright" d="M232 68h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path class="s-star s-bright" d="M17 70h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path class="s-star s-bright" d="M279 20h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path class="s-star s-bright" d="M14 34h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path class="s-star s-bright" d="M49 31h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/></svg><!--/@stars-->
+            <div class="clouds"><!--@clouds--><svg class="cloud c1" viewBox="0 0 34 11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><rect class="c-main" x="14" y="0" width="7" height="1"/><rect class="c-main" x="13" y="1" width="9" height="1"/><rect class="c-main" x="12" y="2" width="11" height="1"/><rect class="c-main" x="5" y="3" width="19" height="1"/><rect class="c-main" x="26" y="3" width="1" height="1"/><rect class="c-main" x="4" y="4" width="26" height="1"/><rect class="c-main" x="3" y="5" width="28" height="1"/><rect class="c-main" x="3" y="6" width="28" height="1"/><rect class="c-main" x="2" y="7" width="30" height="1"/><rect class="c-main" x="3" y="8" width="28" height="1"/><rect class="c-shade" x="3" y="9" width="28" height="1"/><rect class="c-shade" x="4" y="10" width="17" height="1"/><rect class="c-shade" x="23" y="10" width="7" height="1"/></svg><svg class="cloud c2" viewBox="0 0 26 8" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><rect class="c-main" x="13" y="0" width="1" height="1"/><rect class="c-main" x="10" y="1" width="7" height="1"/><rect class="c-main" x="4" y="2" width="14" height="1"/><rect class="c-main" x="3" y="3" width="15" height="1"/><rect class="c-main" x="19" y="3" width="3" height="1"/><rect class="c-main" x="2" y="4" width="22" height="1"/><rect class="c-main" x="2" y="5" width="22" height="1"/><rect class="c-shade" x="2" y="6" width="23" height="1"/><rect class="c-shade" x="3" y="7" width="21" height="1"/></svg><svg class="cloud c3" viewBox="0 0 40 10" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><rect class="c-main" x="12" y="0" width="7" height="1"/><rect class="c-main" x="11" y="1" width="9" height="1"/><rect class="c-main" x="22" y="1" width="5" height="1"/><rect class="c-main" x="7" y="2" width="1" height="1"/><rect class="c-main" x="10" y="2" width="19" height="1"/><rect class="c-main" x="4" y="3" width="25" height="1"/><rect class="c-main" x="3" y="4" width="32" height="1"/><rect class="c-main" x="3" y="5" width="33" height="1"/><rect class="c-main" x="2" y="6" width="35" height="1"/><rect class="c-main" x="3" y="7" width="34" height="1"/><rect class="c-shade" x="3" y="8" width="16" height="1"/><rect class="c-shade" x="20" y="8" width="17" height="1"/><rect class="c-shade" x="4" y="9" width="7" height="1"/><rect class="c-shade" x="22" y="9" width="5" height="1"/><rect class="c-shade" x="29" y="9" width="7" height="1"/></svg><!--/@clouds--></div>
+        </div>
+
+        <button id="theme-toggle" class="celestial" type="button" aria-label="Switch to night">
+            <!--@celestial--><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><g class="sun-g"><rect class="sun-rim" x="7" y="0" width="2" height="1"/><rect class="sun-rim" x="4" y="1" width="8" height="1"/><rect class="sun-rim" x="3" y="2" width="2" height="1"/><rect class="sun" x="5" y="2" width="6" height="1"/><rect class="sun-rim" x="11" y="2" width="2" height="1"/><rect class="sun-rim" x="2" y="3" width="2" height="1"/><rect class="sun" x="4" y="3" width="8" height="1"/><rect class="sun-rim" x="12" y="3" width="2" height="1"/><rect class="sun-rim" x="1" y="4" width="2" height="1"/><rect class="sun" x="3" y="4" width="1" height="1"/><rect class="sun-hi" x="4" y="4" width="2" height="1"/><rect class="sun" x="6" y="4" width="7" height="1"/><rect class="sun-rim" x="13" y="4" width="2" height="1"/><rect class="sun-rim" x="1" y="5" width="1" height="1"/><rect class="sun" x="2" y="5" width="2" height="1"/><rect class="sun-hi" x="4" y="5" width="1" height="1"/><rect class="sun" x="5" y="5" width="9" height="1"/><rect class="sun-rim" x="14" y="5" width="1" height="1"/><rect class="sun-rim" x="1" y="6" width="1" height="1"/><rect class="sun" x="2" y="6" width="12" height="1"/><rect class="sun-rim" x="14" y="6" width="1" height="1"/><rect class="sun-rim" x="0" y="7" width="2" height="1"/><rect class="sun" x="2" y="7" width="12" height="1"/><rect class="sun-rim" x="14" y="7" width="2" height="1"/><rect class="sun-rim" x="0" y="8" width="2" height="1"/><rect class="sun" x="2" y="8" width="11" height="1"/><rect class="sun-lo" x="13" y="8" width="1" height="1"/><rect class="sun-rim" x="14" y="8" width="2" height="1"/><rect class="sun-rim" x="1" y="9" width="1" height="1"/><rect class="sun" x="2" y="9" width="10" height="1"/><rect class="sun-lo" x="12" y="9" width="2" height="1"/><rect class="sun-rim" x="14" y="9" width="1" height="1"/><rect class="sun-rim" x="1" y="10" width="1" height="1"/><rect class="sun" x="2" y="10" width="9" height="1"/><rect class="sun-lo" x="11" y="10" width="3" height="1"/><rect class="sun-rim" x="14" y="10" width="1" height="1"/><rect class="sun-rim" x="1" y="11" width="2" height="1"/><rect class="sun" x="3" y="11" width="7" height="1"/><rect class="sun-lo" x="10" y="11" width="3" height="1"/><rect class="sun-rim" x="13" y="11" width="2" height="1"/><rect class="sun-rim" x="2" y="12" width="2" height="1"/><rect class="sun" x="4" y="12" width="5" height="1"/><rect class="sun-lo" x="9" y="12" width="3" height="1"/><rect class="sun-rim" x="12" y="12" width="2" height="1"/><rect class="sun-rim" x="3" y="13" width="2" height="1"/><rect class="sun" x="5" y="13" width="3" height="1"/><rect class="sun-lo" x="8" y="13" width="3" height="1"/><rect class="sun-rim" x="11" y="13" width="2" height="1"/><rect class="sun-rim" x="4" y="14" width="8" height="1"/><rect class="sun-rim" x="7" y="15" width="2" height="1"/></g><g class="moon-g"><rect class="moon-rim" x="7" y="0" width="2" height="1"/><rect class="moon-rim" x="4" y="1" width="8" height="1"/><rect class="moon-rim" x="3" y="2" width="2" height="1"/><rect class="moon" x="5" y="2" width="6" height="1"/><rect class="moon-rim" x="11" y="2" width="2" height="1"/><rect class="moon-rim" x="2" y="3" width="2" height="1"/><rect class="moon" x="4" y="3" width="8" height="1"/><rect class="moon-rim" x="12" y="3" width="2" height="1"/><rect class="moon-rim" x="1" y="4" width="2" height="1"/><rect class="moon" x="3" y="4" width="4" height="1"/><rect class="moon-crater" x="7" y="4" width="2" height="1"/><rect class="moon" x="9" y="4" width="4" height="1"/><rect class="moon-rim" x="13" y="4" width="2" height="1"/><rect class="moon-rim" x="1" y="5" width="1" height="1"/><rect class="moon" x="2" y="5" width="12" height="1"/><rect class="moon-rim" x="14" y="5" width="1" height="1"/><rect class="moon-rim" x="1" y="6" width="1" height="1"/><rect class="moon" x="2" y="6" width="8" height="1"/><rect class="moon-crater" x="10" y="6" width="2" height="1"/><rect class="moon" x="12" y="6" width="2" height="1"/><rect class="moon-rim" x="14" y="6" width="1" height="1"/><rect class="moon-rim" x="0" y="7" width="2" height="1"/><rect class="moon" x="2" y="7" width="8" height="1"/><rect class="moon-crater" x="10" y="7" width="1" height="1"/><rect class="moon" x="11" y="7" width="3" height="1"/><rect class="moon-rim" x="14" y="7" width="2" height="1"/><rect class="moon-rim" x="0" y="8" width="2" height="1"/><rect class="moon" x="2" y="8" width="11" height="1"/><rect class="moon-lo" x="13" y="8" width="1" height="1"/><rect class="moon-rim" x="14" y="8" width="2" height="1"/><rect class="moon-rim" x="1" y="9" width="1" height="1"/><rect class="moon" x="2" y="9" width="10" height="1"/><rect class="moon-lo" x="12" y="9" width="2" height="1"/><rect class="moon-rim" x="14" y="9" width="1" height="1"/><rect class="moon-rim" x="1" y="10" width="1" height="1"/><rect class="moon" x="2" y="10" width="3" height="1"/><rect class="moon-crater" x="5" y="10" width="2" height="1"/><rect class="moon" x="7" y="10" width="4" height="1"/><rect class="moon-lo" x="11" y="10" width="3" height="1"/><rect class="moon-rim" x="14" y="10" width="1" height="1"/><rect class="moon-rim" x="1" y="11" width="2" height="1"/><rect class="moon" x="3" y="11" width="2" height="1"/><rect class="moon-crater" x="5" y="11" width="1" height="1"/><rect class="moon" x="6" y="11" width="4" height="1"/><rect class="moon-lo" x="10" y="11" width="3" height="1"/><rect class="moon-rim" x="13" y="11" width="2" height="1"/><rect class="moon-rim" x="2" y="12" width="2" height="1"/><rect class="moon" x="4" y="12" width="5" height="1"/><rect class="moon-crater" x="9" y="12" width="1" height="1"/><rect class="moon-lo" x="10" y="12" width="2" height="1"/><rect class="moon-rim" x="12" y="12" width="2" height="1"/><rect class="moon-rim" x="3" y="13" width="2" height="1"/><rect class="moon" x="5" y="13" width="3" height="1"/><rect class="moon-lo" x="8" y="13" width="3" height="1"/><rect class="moon-rim" x="11" y="13" width="2" height="1"/><rect class="moon-rim" x="4" y="14" width="8" height="1"/><rect class="moon-rim" x="7" y="15" width="2" height="1"/></g></svg><!--/@celestial-->
         </button>
-    </div>
 
-    <main>
-        <header class="hero">
-            <p class="kicker"><span class="prompt">$</span> ./ahmed --introduce</p>
-            <h1 id="name" data-text="Ahmed Ismail">Ahmed Ismail</h1>
-            <p class="subtitle">
-                <span id="role-text"></span><span class="caret" aria-hidden="true">▊</span>
-            </p>
-            <p class="status"><span class="dot" aria-hidden="true"></span> Software Engineer Intern @ Shopify &mdash; Database Platform, Ottawa</p>
-            <p class="links">
-                <a href="mailto:ahmedismail.tech@gmail.com" id="email-link" data-email="ahmedismail.tech@gmail.com">email</a>
-                <a href="https://github.com/ismailahmed1">github</a>
-                <a href="https://www.linkedin.com/in/ismailahmed1/">linkedin</a>
-                <a href="https://x.com/therealcanadawy">x</a>
-                <a href="./assets/Ahmed_Ismail_Resume.pdf">resume</a>
-            </p>
+        <div class="hero">
+            <h1>Ahmed Ismail</h1>
+            <p class="tagline">Software engineer. Computer vision, ML infrastructure, and software that touches hardware.</p>
+            <p class="now"><span class="badge">Now</span> Software Engineer Intern at Shopify, Database Platform</p>
+            <ul class="links">
+                <li><a class="btn" href="mailto:ahmedismail.tech@gmail.com" id="email-link" data-email="ahmedismail.tech@gmail.com">Email</a></li>
+                <li><a class="btn" href="https://github.com/ismailahmed1">GitHub</a></li>
+                <li><a class="btn" href="https://www.linkedin.com/in/ismailahmed1/">LinkedIn</a></li>
+                <li><a class="btn btn-gold" href="./assets/Ahmed_Ismail_Resume.pdf">Resume</a></li>
+            </ul>
+        </div>
 
-            <nav class="section-nav" aria-label="Sections">
-                <a href="#about">whoami</a>
-                <a href="#experience">experience</a>
-                <a href="#skills">skills</a>
-                <a href="#projects">projects</a>
-                <a href="#socials">socials</a>
-                <a href="#education">education</a>
-            </nav>
-        </header>
+        <!--@terrain--><svg class="terrain" viewBox="0 0 320 100" preserveAspectRatio="xMidYMax slice" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path class="t-far" d="M0 100V31H12V30H24V32H27V34H30V37H33V40H36V43H39V45H42V47H45V48H48V49H57V48H63V49H66V50H69V51H75V52H81V51H84V49H87V48H90V46H93V44H96V43H105V44H108V45H111V47H114V49H117V50H138V51H141V52H144V53H147V54H150V55H156V54H159V52H162V50H165V47H168V44H171V42H174V40H177V38H180V37H186V36H192V35H195V34H198V33H201V31H204V30H207V29H216V31H219V32H222V35H225V37H228V38H231V39H240V38H246V37H258V38H264V39H267V38H270V37H273V36H276V34H279V32H282V31H285V30H288V31H291V32H294V33H297V35H300V38H303V40H306V42H309V43H312V44H318V45H320V100Z"/><path class="t-near" d="M0 100V62H6V63H12V62H18V61H22V60H24V59H26V58H28V57H32V56H34V55H38V54H48V55H52V56H54V57H56V58H58V59H60V61H62V62H64V63H66V64H68V66H70V67H74V68H76V69H80V70H88V69H94V68H98V67H114V68H118V69H120V70H124V71H128V72H132V73H140V72H144V71H146V70H148V69H150V68H152V67H154V65H156V64H158V63H160V61H162V60H164V59H166V58H168V57H172V56H182V57H186V58H190V59H194V60H198V61H210V60H214V59H218V58H224V57H234V58H236V59H240V60H242V61H244V63H246V64H248V65H250V66H252V68H254V69H256V70H258V71H260V72H262V73H268V74H270V73H276V72H280V71H282V70H286V69H288V68H292V67H296V66H306V67H312V68H318V69H320V100Z"/><rect class="t-trunk" x="6" y="75" width="2" height="8"/><rect class="t-leaf" x="5" y="70" width="4" height="1"/><rect class="t-leaf" x="3" y="71" width="8" height="1"/><rect class="t-leaf" x="2" y="72" width="10" height="1"/><rect class="t-leaf" x="2" y="73" width="10" height="1"/><rect class="t-leaf" x="2" y="74" width="10" height="1"/><rect class="t-leaf-dark" x="3" y="75" width="8" height="1"/><rect class="t-leaf-dark" x="5" y="76" width="4" height="1"/><rect class="t-leaf-hi" x="4" y="71" width="2" height="1"/><rect class="t-trunk" x="33" y="80" width="2" height="8"/><rect class="t-leaf" x="32" y="75" width="4" height="1"/><rect class="t-leaf" x="30" y="76" width="8" height="1"/><rect class="t-leaf" x="29" y="77" width="10" height="1"/><rect class="t-leaf" x="29" y="78" width="10" height="1"/><rect class="t-leaf" x="29" y="79" width="10" height="1"/><rect class="t-leaf-dark" x="30" y="80" width="8" height="1"/><rect class="t-leaf-dark" x="32" y="81" width="4" height="1"/><rect class="t-leaf-hi" x="31" y="76" width="2" height="1"/><rect class="t-trunk" x="73" y="78" width="2" height="9"/><rect class="t-leaf" x="72" y="73" width="4" height="1"/><rect class="t-leaf" x="70" y="74" width="8" height="1"/><rect class="t-leaf" x="69" y="75" width="10" height="1"/><rect class="t-leaf" x="69" y="76" width="10" height="1"/><rect class="t-leaf" x="69" y="77" width="10" height="1"/><rect class="t-leaf-dark" x="70" y="78" width="8" height="1"/><rect class="t-leaf-dark" x="72" y="79" width="4" height="1"/><rect class="t-leaf-hi" x="71" y="74" width="2" height="1"/><rect class="t-trunk" x="91" y="73" width="2" height="9"/><rect class="t-leaf" x="90" y="68" width="4" height="1"/><rect class="t-leaf" x="88" y="69" width="8" height="1"/><rect class="t-leaf" x="87" y="70" width="10" height="1"/><rect class="t-leaf" x="87" y="71" width="10" height="1"/><rect class="t-leaf" x="87" y="72" width="10" height="1"/><rect class="t-leaf-dark" x="88" y="73" width="8" height="1"/><rect class="t-leaf-dark" x="90" y="74" width="4" height="1"/><rect class="t-leaf-hi" x="89" y="69" width="2" height="1"/><rect class="t-trunk" x="122" y="73" width="2" height="12"/><rect class="t-leaf" x="122" y="70" width="2" height="1"/><rect class="t-leaf" x="120" y="71" width="6" height="1"/><rect class="t-leaf" x="119" y="72" width="8" height="1"/><rect class="t-leaf-dark" x="119" y="73" width="8" height="1"/><rect class="t-leaf-dark" x="120" y="74" width="6" height="1"/><rect class="t-leaf-hi" x="120" y="71" width="2" height="1"/><rect class="t-trunk" x="147" y="72" width="2" height="13"/><rect class="t-leaf" x="146" y="67" width="4" height="1"/><rect class="t-leaf" x="144" y="68" width="8" height="1"/><rect class="t-leaf" x="143" y="69" width="10" height="1"/><rect class="t-leaf" x="143" y="70" width="10" height="1"/><rect class="t-leaf" x="143" y="71" width="10" height="1"/><rect class="t-leaf-dark" x="144" y="72" width="8" height="1"/><rect class="t-leaf-dark" x="146" y="73" width="4" height="1"/><rect class="t-leaf-hi" x="145" y="68" width="2" height="1"/><rect class="t-trunk" x="213" y="75" width="2" height="9"/><rect class="t-leaf" x="213" y="72" width="2" height="1"/><rect class="t-leaf" x="211" y="73" width="6" height="1"/><rect class="t-leaf" x="210" y="74" width="8" height="1"/><rect class="t-leaf-dark" x="210" y="75" width="8" height="1"/><rect class="t-leaf-dark" x="211" y="76" width="6" height="1"/><rect class="t-leaf-hi" x="211" y="73" width="2" height="1"/><rect class="t-trunk" x="234" y="72" width="2" height="10"/><rect class="t-leaf" x="233" y="67" width="4" height="1"/><rect class="t-leaf" x="231" y="68" width="8" height="1"/><rect class="t-leaf" x="230" y="69" width="10" height="1"/><rect class="t-leaf" x="230" y="70" width="10" height="1"/><rect class="t-leaf" x="230" y="71" width="10" height="1"/><rect class="t-leaf-dark" x="231" y="72" width="8" height="1"/><rect class="t-leaf-dark" x="233" y="73" width="4" height="1"/><rect class="t-leaf-hi" x="232" y="68" width="2" height="1"/><rect class="t-trunk" x="275" y="75" width="2" height="11"/><rect class="t-leaf" x="274" y="70" width="4" height="1"/><rect class="t-leaf" x="272" y="71" width="8" height="1"/><rect class="t-leaf" x="271" y="72" width="10" height="1"/><rect class="t-leaf" x="271" y="73" width="10" height="1"/><rect class="t-leaf" x="271" y="74" width="10" height="1"/><rect class="t-leaf-dark" x="272" y="75" width="8" height="1"/><rect class="t-leaf-dark" x="274" y="76" width="4" height="1"/><rect class="t-leaf-hi" x="273" y="71" width="2" height="1"/><rect class="t-trunk" x="299" y="77" width="2" height="11"/><rect class="t-leaf" x="298" y="72" width="4" height="1"/><rect class="t-leaf" x="296" y="73" width="8" height="1"/><rect class="t-leaf" x="295" y="74" width="10" height="1"/><rect class="t-leaf" x="295" y="75" width="10" height="1"/><rect class="t-leaf" x="295" y="76" width="10" height="1"/><rect class="t-leaf-dark" x="296" y="77" width="8" height="1"/><rect class="t-leaf-dark" x="298" y="78" width="4" height="1"/><rect class="t-leaf-hi" x="297" y="73" width="2" height="1"/><path class="t-grass" d="M0 100V83H13V84H17V85H20V86H24V87H28V88H40V87H46V86H66V87H75V86H80V85H84V84H87V83H91V82H106V83H111V84H117V85H128V84H143V85H148V86H151V87H155V88H161V89H166V88H172V87H176V86H180V85H211V84H216V83H220V82H226V81H230V82H236V83H240V84H244V85H248V86H265V85H274V86H281V87H285V88H300V87H304V86H308V85H311V84H316V83H320V100Z"/><path class="t-dirt" d="M0 100V85H13V86H17V87H20V88H24V89H28V90H40V89H46V88H66V89H75V88H80V87H84V86H87V85H91V84H106V85H111V86H117V87H128V86H143V87H148V88H151V89H155V90H161V91H166V90H172V89H176V88H180V87H211V86H216V85H220V84H226V83H230V84H236V85H240V86H244V87H248V88H265V87H274V88H281V89H285V90H300V89H304V88H308V87H311V86H316V85H320V100Z"/><rect class="t-grass" x="4" y="82" width="1" height="1"/><rect class="t-dirt-dark" x="6" y="93" width="2" height="1"/><rect class="t-grass" x="7" y="82" width="1" height="1"/><rect class="t-dirt-dark" x="7" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="8" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="11" y="88" width="2" height="1"/><rect class="t-dirt-dark" x="13" y="93" width="2" height="1"/><rect class="t-dirt-hi" x="15" y="99" width="2" height="1"/><rect class="t-grass" x="17" y="84" width="1" height="1"/><rect class="t-dirt-hi" x="17" y="89" width="1" height="1"/><rect class="t-grass" x="18" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="18" y="88" width="2" height="1"/><rect class="t-grass" x="19" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="19" y="91" width="1" height="1"/><rect class="t-dirt-hi" x="21" y="96" width="1" height="1"/><rect class="t-dirt-dark" x="22" y="94" width="1" height="1"/><rect class="t-grass" x="23" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="23" y="97" width="2" height="1"/><rect class="t-grass" x="24" y="86" width="1" height="1"/><rect class="t-dirt-dark" x="26" y="93" width="2" height="1"/><rect class="t-dirt-dark" x="30" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="34" y="91" width="2" height="1"/><rect class="t-dirt-dark" x="35" y="97" width="1" height="1"/><rect class="t-dirt-dark" x="36" y="96" width="2" height="1"/><rect class="t-grass" x="38" y="87" width="1" height="1"/><rect class="t-dirt-dark" x="38" y="93" width="1" height="1"/><rect class="t-grass" x="39" y="87" width="1" height="1"/><rect class="t-grass" x="41" y="86" width="1" height="1"/><rect class="t-dirt-dark" x="41" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="42" y="94" width="2" height="1"/><rect class="t-dirt-hi" x="44" y="95" width="2" height="1"/><rect class="t-grass" x="47" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="47" y="89" width="1" height="1"/><rect class="t-grass" x="48" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="50" y="97" width="1" height="1"/><rect class="t-dirt-dark" x="58" y="90" width="1" height="1"/><rect class="t-dirt-dark" x="58" y="92" width="1" height="1"/><rect class="t-grass" x="60" y="85" width="1" height="1"/><rect class="t-grass" x="61" y="85" width="1" height="1"/><rect class="t-grass" x="64" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="65" y="94" width="1" height="1"/><rect class="t-dirt-dark" x="65" y="97" width="2" height="1"/><rect class="t-grass" x="66" y="86" width="1" height="1"/><rect class="t-dirt-hi" x="67" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="67" y="94" width="1" height="1"/><rect class="t-dirt-hi" x="68" y="96" width="2" height="1"/><rect class="t-dirt-dark" x="69" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="70" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="71" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="73" y="98" width="1" height="1"/><rect class="t-dirt-dark" x="74" y="94" width="2" height="1"/><rect class="t-grass" x="76" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="76" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="77" y="96" width="1" height="1"/><rect class="t-grass" x="78" y="85" width="1" height="1"/><rect class="t-grass" x="83" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="83" y="89" width="1" height="1"/><rect class="t-grass" x="84" y="83" width="1" height="1"/><rect class="t-dirt-dark" x="86" y="89" width="1" height="1"/><rect class="t-dirt-hi" x="86" y="92" width="2" height="1"/><rect class="t-dirt-dark" x="87" y="90" width="1" height="1"/><rect class="t-dirt-dark" x="87" y="92" width="1" height="1"/><rect class="t-dirt-dark" x="88" y="94" width="1" height="1"/><rect class="t-grass" x="89" y="82" width="1" height="1"/><rect class="t-dirt-dark" x="89" y="86" width="2" height="1"/><rect class="t-dirt-dark" x="93" y="96" width="1" height="1"/><rect class="t-dirt-dark" x="93" y="98" width="2" height="1"/><rect class="t-grass" x="95" y="81" width="1" height="1"/><rect class="t-dirt-dark" x="98" y="87" width="1" height="1"/><rect class="t-dirt-dark" x="99" y="85" width="2" height="1"/><rect class="t-grass" x="101" y="81" width="1" height="1"/><rect class="t-grass" x="102" y="81" width="1" height="1"/><rect class="t-grass" x="106" y="82" width="1" height="1"/><rect class="t-grass" x="107" y="82" width="1" height="1"/><rect class="t-dirt-dark" x="107" y="95" width="1" height="1"/><rect class="t-grass" x="109" y="82" width="1" height="1"/><rect class="t-dirt-dark" x="110" y="89" width="1" height="1"/><rect class="t-grass" x="113" y="83" width="1" height="1"/><rect class="t-grass" x="114" y="83" width="1" height="1"/><rect class="t-dirt-dark" x="116" y="88" width="2" height="1"/><rect class="t-dirt-dark" x="118" y="93" width="1" height="1"/><rect class="t-grass" x="119" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="121" y="93" width="1" height="1"/><rect class="t-grass" x="122" y="84" width="1" height="1"/><rect class="t-grass" x="126" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="126" y="98" width="1" height="1"/><rect class="t-dirt-dark" x="127" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="130" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="131" y="95" width="1" height="1"/><rect class="t-grass" x="135" y="83" width="1" height="1"/><rect class="t-dirt-hi" x="135" y="95" width="1" height="1"/><rect class="t-dirt-dark" x="138" y="95" width="1" height="1"/><rect class="t-dirt-dark" x="139" y="87" width="1" height="1"/><rect class="t-dirt-dark" x="140" y="91" width="1" height="1"/><rect class="t-grass" x="143" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="145" y="94" width="1" height="1"/><rect class="t-dirt-hi" x="146" y="96" width="1" height="1"/><rect class="t-dirt-dark" x="147" y="90" width="2" height="1"/><rect class="t-dirt-dark" x="147" y="99" width="1" height="1"/><rect class="t-grass" x="148" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="148" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="149" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="150" y="90" width="2" height="1"/><rect class="t-dirt-dark" x="150" y="93" width="2" height="1"/><rect class="t-grass" x="151" y="86" width="1" height="1"/><rect class="t-grass" x="154" y="86" width="1" height="1"/><rect class="t-grass" x="155" y="87" width="1" height="1"/><rect class="t-dirt-dark" x="155" y="97" width="1" height="1"/><rect class="t-dirt-dark" x="156" y="96" width="1" height="1"/><rect class="t-dirt-dark" x="157" y="95" width="2" height="1"/><rect class="t-dirt-hi" x="157" y="98" width="1" height="1"/><rect class="t-dirt-dark" x="158" y="98" width="1" height="1"/><rect class="t-dirt-dark" x="158" y="98" width="1" height="1"/><rect class="t-dirt-hi" x="159" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="160" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="163" y="99" width="2" height="1"/><rect class="t-grass" x="165" y="88" width="1" height="1"/><rect class="t-dirt-dark" x="165" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="167" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="168" y="96" width="1" height="1"/><rect class="t-dirt-dark" x="168" y="97" width="2" height="1"/><rect class="t-dirt-dark" x="169" y="91" width="1" height="1"/><rect class="t-dirt-hi" x="173" y="99" width="2" height="1"/><rect class="t-grass" x="174" y="86" width="1" height="1"/><rect class="t-dirt-hi" x="174" y="97" width="1" height="1"/><rect class="t-grass" x="176" y="85" width="1" height="1"/><rect class="t-dirt-hi" x="176" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="178" y="92" width="1" height="1"/><rect class="t-dirt-dark" x="179" y="89" width="2" height="1"/><rect class="t-dirt-dark" x="181" y="89" width="2" height="1"/><rect class="t-grass" x="182" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="182" y="95" width="2" height="1"/><rect class="t-dirt-dark" x="186" y="91" width="2" height="1"/><rect class="t-dirt-dark" x="186" y="89" width="1" height="1"/><rect class="t-dirt-hi" x="188" y="95" width="1" height="1"/><rect class="t-dirt-dark" x="189" y="92" width="1" height="1"/><rect class="t-dirt-dark" x="193" y="97" width="1" height="1"/><rect class="t-dirt-dark" x="193" y="93" width="1" height="1"/><rect class="t-dirt-hi" x="195" y="88" width="1" height="1"/><rect class="t-dirt-dark" x="196" y="95" width="1" height="1"/><rect class="t-grass" x="198" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="200" y="99" width="1" height="1"/><rect class="t-dirt-dark" x="201" y="93" width="1" height="1"/><rect class="t-dirt-dark" x="202" y="90" width="1" height="1"/><rect class="t-dirt-dark" x="203" y="88" width="1" height="1"/><rect class="t-dirt-hi" x="204" y="97" width="2" height="1"/><rect class="t-dirt-dark" x="205" y="92" width="1" height="1"/><rect class="t-grass" x="206" y="84" width="1" height="1"/><rect class="t-dirt-hi" x="207" y="90" width="1" height="1"/><rect class="t-dirt-dark" x="208" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="209" y="91" width="2" height="1"/><rect class="t-dirt-dark" x="210" y="91" width="2" height="1"/><rect class="t-dirt-dark" x="210" y="93" width="1" height="1"/><rect class="t-dirt-hi" x="211" y="95" width="2" height="1"/><rect class="t-grass" x="212" y="83" width="1" height="1"/><rect class="t-dirt-dark" x="212" y="96" width="2" height="1"/><rect class="t-dirt-dark" x="215" y="87" width="1" height="1"/><rect class="t-grass" x="218" y="82" width="1" height="1"/><rect class="t-grass" x="220" y="81" width="1" height="1"/><rect class="t-dirt-dark" x="220" y="99" width="2" height="1"/><rect class="t-grass" x="221" y="81" width="1" height="1"/><rect class="t-dirt-dark" x="222" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="223" y="99" width="1" height="1"/><rect class="t-dirt-dark" x="229" y="96" width="1" height="1"/><rect class="t-dirt-dark" x="230" y="97" width="2" height="1"/><rect class="t-dirt-dark" x="230" y="98" width="1" height="1"/><rect class="t-grass" x="232" y="81" width="1" height="1"/><rect class="t-dirt-hi" x="235" y="96" width="1" height="1"/><rect class="t-dirt-dark" x="238" y="86" width="1" height="1"/><rect class="t-grass" x="240" y="83" width="1" height="1"/><rect class="t-grass" x="241" y="83" width="1" height="1"/><rect class="t-dirt-dark" x="241" y="92" width="2" height="1"/><rect class="t-grass" x="244" y="84" width="1" height="1"/><rect class="t-grass" x="245" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="245" y="98" width="2" height="1"/><rect class="t-dirt-hi" x="246" y="98" width="1" height="1"/><rect class="t-dirt-dark" x="248" y="89" width="2" height="1"/><rect class="t-grass" x="249" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="249" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="249" y="97" width="1" height="1"/><rect class="t-grass" x="250" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="250" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="251" y="93" width="2" height="1"/><rect class="t-dirt-dark" x="251" y="96" width="1" height="1"/><rect class="t-grass" x="253" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="253" y="90" width="2" height="1"/><rect class="t-grass" x="254" y="85" width="1" height="1"/><rect class="t-dirt-dark" x="258" y="97" width="1" height="1"/><rect class="t-dirt-dark" x="259" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="263" y="89" width="2" height="1"/><rect class="t-grass" x="266" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="266" y="89" width="1" height="1"/><rect class="t-grass" x="267" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="267" y="88" width="2" height="1"/><rect class="t-dirt-dark" x="268" y="97" width="1" height="1"/><rect class="t-grass" x="270" y="84" width="1" height="1"/><rect class="t-dirt-dark" x="271" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="271" y="98" width="2" height="1"/><rect class="t-dirt-dark" x="272" y="98" width="1" height="1"/><rect class="t-dirt-hi" x="274" y="94" width="2" height="1"/><rect class="t-dirt-dark" x="275" y="95" width="2" height="1"/><rect class="t-dirt-dark" x="277" y="90" width="1" height="1"/><rect class="t-dirt-dark" x="277" y="89" width="1" height="1"/><rect class="t-dirt-dark" x="278" y="96" width="2" height="1"/><rect class="t-dirt-dark" x="279" y="96" width="2" height="1"/><rect class="t-dirt-dark" x="280" y="92" width="1" height="1"/><rect class="t-dirt-dark" x="282" y="95" width="1" height="1"/><rect class="t-grass" x="286" y="87" width="1" height="1"/><rect class="t-dirt-dark" x="287" y="91" width="1" height="1"/><rect class="t-dirt-dark" x="296" y="92" width="1" height="1"/><rect class="t-dirt-dark" x="298" y="92" width="1" height="1"/><rect class="t-grass" x="299" y="87" width="1" height="1"/><rect class="t-grass" x="301" y="86" width="1" height="1"/><rect class="t-grass" x="302" y="86" width="1" height="1"/><rect class="t-dirt-dark" x="306" y="90" width="1" height="1"/><rect class="t-dirt-dark" x="308" y="94" width="1" height="1"/><rect class="t-dirt-dark" x="310" y="98" width="1" height="1"/><rect class="t-dirt-dark" x="311" y="95" width="2" height="1"/><rect class="t-grass" x="313" y="83" width="1" height="1"/><rect class="t-dirt-dark" x="316" y="96" width="2" height="1"/><rect class="t-grass" x="317" y="82" width="1" height="1"/><rect class="t-grass" x="318" y="82" width="1" height="1"/><rect class="t-grass" x="319" y="82" width="1" height="1"/><rect class="t-grass-dark" x="2" y="85" width="1" height="1"/><rect class="t-grass-dark" x="3" y="85" width="1" height="1"/><rect class="t-grass-dark" x="7" y="85" width="1" height="1"/><rect class="t-grass-dark" x="10" y="85" width="1" height="1"/><rect class="t-grass-dark" x="11" y="85" width="1" height="1"/><rect class="t-grass-dark" x="17" y="87" width="1" height="1"/><rect class="t-grass-dark" x="24" y="89" width="1" height="1"/><rect class="t-grass-dark" x="26" y="89" width="1" height="1"/><rect class="t-grass-dark" x="30" y="90" width="1" height="1"/><rect class="t-grass-dark" x="32" y="90" width="1" height="1"/><rect class="t-grass-dark" x="34" y="90" width="1" height="1"/><rect class="t-grass-dark" x="35" y="90" width="1" height="1"/><rect class="t-grass-dark" x="37" y="90" width="1" height="1"/><rect class="t-grass-dark" x="38" y="90" width="1" height="1"/><rect class="t-grass-dark" x="47" y="88" width="1" height="1"/><rect class="t-grass-dark" x="51" y="88" width="1" height="1"/><rect class="t-grass-dark" x="54" y="88" width="1" height="1"/><rect class="t-grass-dark" x="55" y="88" width="1" height="1"/><rect class="t-grass-dark" x="58" y="88" width="1" height="1"/><rect class="t-grass-dark" x="59" y="88" width="1" height="1"/><rect class="t-grass-dark" x="60" y="88" width="1" height="1"/><rect class="t-grass-dark" x="61" y="88" width="1" height="1"/><rect class="t-grass-dark" x="64" y="88" width="1" height="1"/><rect class="t-grass-dark" x="67" y="89" width="1" height="1"/><rect class="t-grass-dark" x="75" y="88" width="1" height="1"/><rect class="t-grass-dark" x="82" y="87" width="1" height="1"/><rect class="t-grass-dark" x="83" y="87" width="1" height="1"/><rect class="t-grass-dark" x="84" y="86" width="1" height="1"/><rect class="t-grass-dark" x="86" y="86" width="1" height="1"/><rect class="t-grass-dark" x="88" y="85" width="1" height="1"/><rect class="t-grass-dark" x="93" y="84" width="1" height="1"/><rect class="t-grass-dark" x="102" y="84" width="1" height="1"/><rect class="t-grass-dark" x="105" y="84" width="1" height="1"/><rect class="t-grass-dark" x="114" y="86" width="1" height="1"/><rect class="t-grass-dark" x="123" y="87" width="1" height="1"/><rect class="t-grass-dark" x="128" y="86" width="1" height="1"/><rect class="t-grass-dark" x="132" y="86" width="1" height="1"/><rect class="t-grass-dark" x="139" y="86" width="1" height="1"/><rect class="t-grass-dark" x="143" y="87" width="1" height="1"/><rect class="t-grass-dark" x="147" y="87" width="1" height="1"/><rect class="t-grass-dark" x="149" y="88" width="1" height="1"/><rect class="t-grass-dark" x="150" y="88" width="1" height="1"/><rect class="t-grass-dark" x="162" y="91" width="1" height="1"/><rect class="t-grass-dark" x="166" y="90" width="1" height="1"/><rect class="t-grass-dark" x="167" y="90" width="1" height="1"/><rect class="t-grass-dark" x="168" y="90" width="1" height="1"/><rect class="t-grass-dark" x="176" y="88" width="1" height="1"/><rect class="t-grass-dark" x="183" y="87" width="1" height="1"/><rect class="t-grass-dark" x="185" y="87" width="1" height="1"/><rect class="t-grass-dark" x="186" y="87" width="1" height="1"/><rect class="t-grass-dark" x="191" y="87" width="1" height="1"/><rect class="t-grass-dark" x="198" y="87" width="1" height="1"/><rect class="t-grass-dark" x="200" y="87" width="1" height="1"/><rect class="t-grass-dark" x="201" y="87" width="1" height="1"/><rect class="t-grass-dark" x="202" y="87" width="1" height="1"/><rect class="t-grass-dark" x="203" y="87" width="1" height="1"/><rect class="t-grass-dark" x="205" y="87" width="1" height="1"/><rect class="t-grass-dark" x="207" y="87" width="1" height="1"/><rect class="t-grass-dark" x="209" y="87" width="1" height="1"/><rect class="t-grass-dark" x="210" y="87" width="1" height="1"/><rect class="t-grass-dark" x="212" y="86" width="1" height="1"/><rect class="t-grass-dark" x="214" y="86" width="1" height="1"/><rect class="t-grass-dark" x="215" y="86" width="1" height="1"/><rect class="t-grass-dark" x="220" y="84" width="1" height="1"/><rect class="t-grass-dark" x="225" y="84" width="1" height="1"/><rect class="t-grass-dark" x="228" y="83" width="1" height="1"/><rect class="t-grass-dark" x="229" y="83" width="1" height="1"/><rect class="t-grass-dark" x="232" y="84" width="1" height="1"/><rect class="t-grass-dark" x="235" y="84" width="1" height="1"/><rect class="t-grass-dark" x="238" y="85" width="1" height="1"/><rect class="t-grass-dark" x="243" y="86" width="1" height="1"/><rect class="t-grass-dark" x="254" y="88" width="1" height="1"/><rect class="t-grass-dark" x="255" y="88" width="1" height="1"/><rect class="t-grass-dark" x="272" y="87" width="1" height="1"/><rect class="t-grass-dark" x="273" y="87" width="1" height="1"/><rect class="t-grass-dark" x="274" y="88" width="1" height="1"/><rect class="t-grass-dark" x="279" y="88" width="1" height="1"/><rect class="t-grass-dark" x="284" y="89" width="1" height="1"/><rect class="t-grass-dark" x="290" y="90" width="1" height="1"/><rect class="t-grass-dark" x="293" y="90" width="1" height="1"/><rect class="t-grass-dark" x="296" y="90" width="1" height="1"/><rect class="t-grass-dark" x="300" y="89" width="1" height="1"/><rect class="t-grass-dark" x="301" y="89" width="1" height="1"/><rect class="t-grass-dark" x="305" y="88" width="1" height="1"/><rect class="t-grass-dark" x="308" y="87" width="1" height="1"/><rect class="t-grass-dark" x="315" y="86" width="1" height="1"/><rect class="t-grass-dark" x="316" y="85" width="1" height="1"/><rect class="t-grass-dark" x="317" y="85" width="1" height="1"/></svg><!--/@terrain-->
+    </header>
 
-        <div class="content">
-            <section id="about">
-            <h2><span class="prompt">$</span> whoami</h2>
+    <nav class="hotbar" aria-label="Sections">
+        <a href="#about"><kbd>1</kbd>About</a>
+        <a href="#experience"><kbd>2</kbd>Experience</a>
+        <a href="#skills"><kbd>3</kbd>Skills</a>
+        <a href="#projects"><kbd>4</kbd>Projects</a>
+        <a href="#education"><kbd>5</kbd>Education</a>
+    </nav>
+
+    <main class="underground">
+        <section id="about" class="panel">
+            <h2>About</h2>
             <p>Computer Systems Engineering student at Carleton, graduating April 2027.</p>
             <p>I'm a Software Engineer Intern at Shopify on the Database Platform team, working on database services. Before this I was at Tesla on computer vision for vehicle service, TrendAI on real-time ML infrastructure, Ross Video on test automation, and Nokia on validation tooling for optical systems.</p>
+            <p>I also teach CS on <a href="https://www.tiktok.com/@elcanadawy1">TikTok</a> and <a href="https://www.instagram.com/elcanadawy1">Instagram</a> (data structures, algorithms, career advice) and have been doing it since 2022. My top post sits at 1.8M views.</p>
             <p>Outside of code: gym, video games, Marvel marathons, and Egypt whenever I can swing it.</p>
 
-            <p class="stats-note">I also teach CS on TikTok and Instagram &mdash; data structures, algorithms, and career advice. Where that and everything else has landed:</p>
             <ul class="stats" aria-label="At a glance">
-                <li><b>70K+</b><span>followers on TikTok &amp; Instagram</span></li>
-                <li><b>4.25M</b><span>monthly views on CS content</span></li>
-                <li><b>7,000+</b><span>users on ShaghalnyShokran</span></li>
-                <li><b>3.7</b><span>GPA at Carleton</span></li>
+                <li class="slot"><b>70K+</b><span>followers on TikTok &amp; Instagram</span></li>
+                <li class="slot"><b>4.25M</b><span>monthly views on CS content</span></li>
+                <li class="slot"><b>7,000+</b><span>users on ShaghalnyShokran</span></li>
+                <li class="slot"><b>3.7</b><span>GPA at Carleton</span></li>
             </ul>
         </section>
 
-        <section id="experience">
-            <h2><span class="prompt">$</span> cat experience.txt</h2>
-            <ol class="timeline">
-                <li class="current">
+        <section id="experience" class="panel">
+            <h2>Experience</h2>
+            <ol class="jobs">
+                <li class="job">
                     <details>
                         <summary>
-                            <span class="role">Software Engineer Intern</span>
-                            <span class="org">Shopify &middot; Ottawa, Ontario, Canada</span>
-                            <span class="when">Sep 2026 &ndash; Present</span>
+                            <span class="job-org">Shopify <span class="badge">Now</span></span>
+                            <span class="job-when">Sep 2026 &ndash; Present</span>
+                            <span class="job-role">Software Engineer Intern &middot; Ottawa, ON</span>
                         </summary>
                         <ul class="bullets">
-                            <li>Incoming Fall 2026 intern joining the Database Platform team (Database Services)</li>
+                            <li>Building reverse backfill from YugabyteDB to MySQL to roll back live migrations, preserving data across heterogeneous schemas</li>
+                            <li>Hardened Go migration verifier on Kubernetes (GKE) processing 11.3T+ rows/day, adding skip detection and alerting with no DB load</li>
+                            <li>Built Ruby on Rails migrations &amp; fixtures for 100-shop Dockerized staging lane covering 2 directions and 6 recovery scenarios</li>
+                            <li>Prevented shop-wide data loss in the Go replication service by keying deletes on primary-key metadata, not first-column guesses</li>
+                            <li>Provisioned database DDL grants and data-lane claims for staging, unblocking end-to-end schema-sync migration testing</li>
+                            <li>Eliminated primary-key collisions in DML generator by replacing random ids with time-seeded, monotonic auto-increment ids</li>
                         </ul>
                     </details>
                 </li>
-                <li>
+                <li class="job">
                     <details>
                         <summary>
-                            <span class="role">Software Engineer Intern</span>
-                            <span class="org">Tesla &middot; Fremont, California, United States</span>
-                            <span class="when">May 2026 &ndash; Aug 2026</span>
+                            <span class="job-org">Tesla</span>
+                            <span class="job-when">May &ndash; Aug 2026</span>
+                            <span class="job-role">Software Engineer Intern &middot; Fremont, CA</span>
                         </summary>
                         <ul class="bullets">
-                            <li>Trained YOLO damage-classification models in PyTorch/OpenCV reaching 98.9% recall at a 2.1% false-positive rate in production</li>
-                            <li>Built an interior-condition model combining polygon segmentation, anomaly detection, and classification to automate service</li>
-                            <li>Diagnosed Ansible deployment bug bricking single-NIC devices by binding uplink and static IP to one interface, raising uptime 50%</li>
-                            <li>Built hardware API linking cameras and Raspberry Pi to automate vehicle service actions, cutting manual inspection 70%</li>
-                            <li>Cut labeling time 50% with a semi-automated Label Studio pipeline feeding 10K+ high-quality annotations into training</li>
-                            <li>Built Arduino-driven laser trigger cutting camera capture latency to &lt;10us and reducing missed/blurred frames by 90%</li>
+                            <li>Trained YOLO classification models in Python, PyTorch/OpenCV reaching 98.9% recall at a 2.1% false-positive rate in production</li>
+                            <li>Deployed segmentation + anomaly detection models on cleaning robot arm with cameras, sensors and Raspberry Pi</li>
+                            <li>Shrank CV model to run real-time lift-safety inference on Raspberry Pi under tight embedded compute and memory limits</li>
+                            <li>Built Arduino laser-triggered capture tuning exposure, sensor and aperture, cutting latency to &lt;10&micro;s and blurred frames 90%</li>
+                            <li>Built data flywheel auto-filtering captures by noise, class and confidence, plus Label Studio pre-labeling that cut labeling time 50%</li>
+                            <li>Deployed edge-PC inference streaming live results across sites; fixed Ansible NIC bug bricking devices, raising uptime 50%</li>
                         </ul>
                     </details>
                 </li>
-                <li>
+                <li class="job">
                     <details>
                         <summary>
-                            <span class="role">Software Engineer Intern</span>
-                            <span class="org">TrendAI &middot; Ottawa, Ontario, Canada</span>
-                            <span class="when">Jan 2026 &ndash; Apr 2026</span>
+                            <span class="job-org">TrendAI</span>
+                            <span class="job-when">Jan &ndash; Apr 2026</span>
+                            <span class="job-role">Software Engineer Intern &middot; Ottawa, ON</span>
                         </summary>
                         <ul class="bullets">
                             <li>Deployed a real-time ML pipeline with Python, PyTorch, TensorFlow, and OpenVINO for low-latency AI guardrail detection</li>
@@ -106,189 +125,134 @@
                         </ul>
                     </details>
                 </li>
-                <li>
+                <li class="job">
                     <details>
                         <summary>
-                            <span class="role">Software Engineer Intern</span>
-                            <span class="org">Ross Video Ltd. &middot; Ottawa, Ontario, Canada</span>
-                            <span class="when">Sep 2025 &ndash; Dec 2025</span>
+                            <span class="job-org">Ross Video</span>
+                            <span class="job-when">Sep &ndash; Dec 2025</span>
+                            <span class="job-role">Software Engineer Intern &middot; Ottawa, ON</span>
                         </summary>
                         <ul class="bullets">
                             <li>Developed video validation framework using Java/Selenium/Maven with 10+ page models and reusable TestNG components</li>
-                            <li>Refactored legacy automation framework to Java 14+, reducing code duplication by 40% and cutting test execution time by 30%</li>
                         </ul>
                     </details>
                 </li>
-                <li>
+                <li class="job">
                     <details>
                         <summary>
-                            <span class="role">Software Engineer Intern</span>
-                            <span class="org">Nokia &middot; Ottawa, Ontario, Canada</span>
-                            <span class="when">Jan 2025 &ndash; Aug 2025</span>
+                            <span class="job-org">Nokia</span>
+                            <span class="job-when">Jan &ndash; Aug 2025</span>
+                            <span class="job-role">Software Engineer Intern &middot; Ottawa, ON</span>
                         </summary>
                         <ul class="bullets">
-                            <li>Engineered unified Python validation interface replacing legacy framework for 800G optical systems, reducing test setup time by 70%</li>
-                            <li>Migrated 50+ legacy Perl/TCL test modules to Python, boosting test speed by 25% and enabling reuse across 3+ product lines</li>
+                            <li>Engineered unified Python validation framework for 800G optical systems, replacing legacy tooling and cutting test setup 70%</li>
                         </ul>
                     </details>
                 </li>
             </ol>
         </section>
 
-        <section id="skills">
-            <h2><span class="prompt">$</span> cat skills.txt</h2>
-            <dl class="skills">
-                <dt>languages</dt>
-                <dd>Python, Java, C, C++, Rust, JavaScript, TypeScript, Go, Bash, SQL</dd>
-
-                <dt>cloud / devops</dt>
-                <dd>AWS, Docker, Serverless Framework, Terraform, OpenTofu, GitHub Actions, Linux</dd>
-
-                <dt>frameworks</dt>
-                <dd>Flask, React, Express.js, Node.js, Spring Boot, Selenium, TestNG, PyTest, k6, gRPC, Git</dd>
-
-                <dt>data</dt>
-                <dd>MySQL, PostgreSQL, MongoDB, Redis</dd>
-
-                <dt>ai / ml</dt>
-                <dd>PyTorch, TensorFlow, OpenCV, OpenVINO, NumPy, SageMaker, Databricks, YOLO</dd>
-
-                <dt>ai tools</dt>
-                <dd>Cursor, Claude Code, Codex, OpenClaw</dd>
-            </dl>
+        <section id="skills" class="panel">
+            <h2>Skills</h2>
+            <div class="inventory">
+                <h3>Languages</h3>
+                <ul class="slots">
+                    <li>Python</li><li>Java</li><li>C</li><li>C++</li><li>Rust</li><li>JavaScript</li><li>TypeScript</li><li>Go</li><li>Bash</li><li>SQL</li>
+                </ul>
+                <h3>AI / ML</h3>
+                <ul class="slots">
+                    <li>PyTorch</li><li>TensorFlow</li><li>OpenCV</li><li>OpenVINO</li><li>NumPy</li><li>SageMaker</li><li>Databricks</li><li>YOLO</li>
+                </ul>
+                <h3>Cloud / DevOps</h3>
+                <ul class="slots">
+                    <li>AWS</li><li>Docker</li><li>Serverless</li><li>Terraform</li><li>OpenTofu</li><li>GitHub Actions</li><li>Linux</li>
+                </ul>
+                <h3>Frameworks</h3>
+                <ul class="slots">
+                    <li>Flask</li><li>React</li><li>Express.js</li><li>Node.js</li><li>Spring Boot</li><li>Selenium</li><li>TestNG</li><li>PyTest</li><li>k6</li><li>gRPC</li><li>Git</li>
+                </ul>
+                <h3>Data</h3>
+                <ul class="slots">
+                    <li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li>
+                </ul>
+                <h3>AI tools</h3>
+                <ul class="slots">
+                    <li>Cursor</li><li>Claude Code</li><li>Codex</li><li>OpenClaw</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2><span class="prompt">$</span> ls projects/</h2>
-            <ul class="cards">
-                <li class="card">
-                    <span class="name">ShaghalnyShokran</span>
-                    <span class="desc">AI resume reviewer &mdash; real-time streaming, ATS scoring, tuned prompts across flagship models. 7,000+ users.</span>
-                    <span class="tags"><i>Python</i><i>Flask</i><i>PostgreSQL</i><i>Redis</i><i>Anthropic API</i><i>Railway</i></span>
-                    <span class="actions">
-                        <a href="https://shaghalnyshokran.com">site</a>
-                    </span>
+        <section id="projects" class="panel">
+            <h2>Projects</h2>
+            <ul class="items">
+                <li class="item r-legendary">
+                    <h3>ShaghalnyShokran</h3>
+                    <p class="item-stat">7,000+ users</p>
+                    <p>AI resume reviewer with real-time streaming, ATS scoring, and tuned prompts across flagship models.</p>
+                    <p class="item-tags">Python &middot; Flask &middot; PostgreSQL &middot; Redis &middot; Anthropic API &middot; Railway</p>
+                    <p class="item-links"><a href="https://shaghalnyshokran.com">Site</a></p>
                 </li>
-                <li class="card">
-                    <span class="name">Meeting Voice Agent</span>
-                    <span class="desc">Joins Google Meet, transcribes live, talks back to participants, and auto-extracts tasks into an Obsidian vault. YC Hackathon, Summer 2026.</span>
-                    <span class="tags"><i>TypeScript</i><i>Next.js</i><i>FastAPI</i><i>Pipecat</i><i>Claude SDK</i><i>Deepgram</i></span>
-                    <span class="actions">
-                        <a href="https://github.com/prmsregmi/carleton">code</a>
-                        <a href="https://www.youtube.com/watch?v=XdPGX2aY5UA">demo</a>
-                    </span>
+                <li class="item r-epic">
+                    <h3>Meeting Voice Agent</h3>
+                    <p class="item-stat">YC Hackathon, Summer 2026</p>
+                    <p>Joins Google Meet, transcribes live, talks back to participants, and extracts tasks into an Obsidian vault.</p>
+                    <p class="item-tags">TypeScript &middot; Next.js &middot; FastAPI &middot; Pipecat &middot; Claude SDK &middot; Deepgram</p>
+                    <p class="item-links"><a href="https://github.com/prmsregmi/carleton">Code</a><a href="https://www.youtube.com/watch?v=XdPGX2aY5UA">Demo</a></p>
                 </li>
-                <li class="card">
-                    <span class="name">MediClarify</span>
-                    <span class="desc">AI medical document simplifier</span>
-                    <span class="tags"><i>ai</i><i>nlp</i></span>
-                    <span class="actions">
-                        <a href="https://github.com/ismailahmed1/MediClarify">code</a>
-                        <a href="https://www.youtube.com/watch?v=b9zeLKd0p5I">demo</a>
-                    </span>
+                <li class="item r-rare">
+                    <h3>MediClarify</h3>
+                    <p>AI medical document simplifier.</p>
+                    <p class="item-tags">AI &middot; NLP</p>
+                    <p class="item-links"><a href="https://github.com/ismailahmed1/MediClarify">Code</a><a href="https://www.youtube.com/watch?v=b9zeLKd0p5I">Demo</a></p>
                 </li>
-                <li class="card">
-                    <span class="name">EcoLens</span>
-                    <span class="desc">Sustainability tracker</span>
-                    <span class="tags"><i>sustainability</i></span>
-                    <span class="actions">
-                        <a href="https://github.com/ismailahmed1/eco-lens">code</a>
-                        <a href="https://www.youtube.com/watch?v=xkZDamh2WCg">demo</a>
-                    </span>
+                <li class="item r-rare">
+                    <h3>EcoLens</h3>
+                    <p>Sustainability tracker.</p>
+                    <p class="item-tags">Sustainability</p>
+                    <p class="item-links"><a href="https://github.com/ismailahmed1/eco-lens">Code</a><a href="https://www.youtube.com/watch?v=xkZDamh2WCg">Demo</a></p>
                 </li>
-                <li class="card">
-                    <span class="name">Nobu</span>
-                    <span class="desc">Money tracker</span>
-                    <span class="tags"><i>fintech</i></span>
-                    <span class="actions">
-                        <a href="https://github.com/ismailahmed1/money-tracker-app">code</a>
-                        <a href="https://youtu.be/Intiopx86-o">demo</a>
-                    </span>
+                <li class="item r-rare">
+                    <h3>Nobu</h3>
+                    <p>Money tracker.</p>
+                    <p class="item-tags">Fintech</p>
+                    <p class="item-links"><a href="https://github.com/ismailahmed1/money-tracker-app">Code</a><a href="https://youtu.be/Intiopx86-o">Demo</a></p>
                 </li>
-                <li class="card">
-                    <span class="name">Sewy</span>
-                    <span class="desc">Football manager AI journalist</span>
-                    <span class="tags"><i>llm</i><i>bot</i></span>
-                    <span class="actions">
-                        <a href="https://github.com/ismailahmed1/football-manager-bot">code</a>
-                        <a href="https://youtu.be/vZXK1BLXOJc">demo</a>
-                    </span>
+                <li class="item r-rare">
+                    <h3>Sewy</h3>
+                    <p>Football manager AI journalist.</p>
+                    <p class="item-tags">LLM &middot; Bot</p>
+                    <p class="item-links"><a href="https://github.com/ismailahmed1/football-manager-bot">Code</a><a href="https://youtu.be/vZXK1BLXOJc">Demo</a></p>
                 </li>
-                <li class="card">
-                    <span class="name">Portfolio</span>
-                    <span class="desc">This page &mdash; there's a working shell in the corner, go type <code>sudo</code> in it</span>
-                    <span class="tags"><i>html</i><i>css</i><i>js</i></span>
-                    <span class="actions">
-                        <a href="https://github.com/ismailahmed1/ahmed-ismail-portfolio">code</a>
-                    </span>
+                <li class="item">
+                    <h3>Portfolio</h3>
+                    <p>This page. Plain HTML, CSS, and a little JS. The terrain is generated pixel-art SVG.</p>
+                    <p class="item-tags">HTML &middot; CSS &middot; JS</p>
+                    <p class="item-links"><a href="https://github.com/ismailahmed1/ahmed-ismail-portfolio">Code</a></p>
                 </li>
             </ul>
         </section>
 
-        <section id="socials">
-            <h2><span class="prompt">$</span> ls socials/</h2>
-            <p class="section-note">Making CS content since 2022, and it grew faster than anything else I've built &mdash; top post sits at 1.8M views.</p>
-            <ul class="rows">
-                <li>
-                    <span class="name">TikTok</span>
-                    <span class="when"><a href="https://www.tiktok.com/@elcanadawy1">@elcanadawy1</a></span>
-                </li>
-                <li>
-                    <span class="name">Instagram</span>
-                    <span class="when"><a href="https://www.instagram.com/elcanadawy1">@elcanadawy1</a></span>
-                </li>
-                <li>
-                    <span class="name">X</span>
-                    <span class="when"><a href="https://x.com/therealcanadawy">@therealcanadawy</a></span>
-                </li>
-            </ul>
+        <section id="education" class="panel">
+            <h2>Education</h2>
+            <div class="edu">
+                <h3>Carleton University</h3>
+                <span class="job-when">Expected Apr 2027</span>
+                <p>B.Eng., Computer Systems Engineering &middot; GPA 3.7/4.0</p>
+            </div>
+            <p class="muted">Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Embedded Systems, Operating Systems.</p>
         </section>
-
-        <section id="education">
-            <h2><span class="prompt">$</span> cat education.txt</h2>
-            <ul class="rows">
-                <li>
-                    <span class="name">Carleton University</span>
-                    <span class="desc">B.Eng., Computer Systems Engineering &mdash; GPA 3.7/4.0</span>
-                    <span class="when">Expected Apr 2027</span>
-                </li>
-            </ul>
-            <p class="section-note coursework">Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Embedded Systems, Operating Systems.</p>
-        </section>
-
-        <footer>
-            <p><span class="prompt">$</span> <span class="cursor">&#9608;</span></p>
-        </footer>
-        </div>
     </main>
 
-    <!-- Interactive terminal -->
-    <button id="term-open" class="term-fab" aria-label="Open interactive terminal">
-        <span class="fab-prompt">&gt;_</span>
-        <span class="fab-text">terminal</span>
-        <kbd>`</kbd>
-    </button>
-
-    <div class="term" id="term" hidden>
-        <div class="term-window" role="dialog" aria-modal="true" aria-label="Interactive terminal">
-            <div class="term-bar">
-                <span class="tl red"></span><span class="tl amber"></span><span class="tl green"></span>
-                <span class="term-title">ahmed@portfolio — zsh</span>
-                <button id="term-close" class="term-x" aria-label="Close terminal">esc</button>
-            </div>
-            <div class="term-body" id="term-body" tabindex="-1"></div>
-            <form class="term-input" id="term-form" autocomplete="off">
-                <label class="prompt" for="term-line">ahmed@portfolio ~ %</label>
-                <input id="term-line" type="text" spellcheck="false" autocapitalize="off" aria-label="Type a command">
-            </form>
-        </div>
-    </div>
-
-    <div class="statusbar" aria-hidden="true">
-        <span>~/ahmed-ismail</span>
-        <span class="sep">·</span>
-        <span id="clock">--:--</span>
-    </div>
+    <footer class="bedrock">
+        <ul class="footer-links">
+            <li><a href="https://github.com/ismailahmed1">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ismailahmed1/">LinkedIn</a></li>
+            <li><a href="https://x.com/therealcanadawy">X</a></li>
+            <li><a href="https://www.tiktok.com/@elcanadawy1">TikTok</a></li>
+            <li><a href="https://www.instagram.com/elcanadawy1">Instagram</a></li>
+        </ul>
+        <p>Ahmed Ismail &middot; San Francisco &ndash; Ottawa</p>
+    </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
